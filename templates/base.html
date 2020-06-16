@@ -1,0 +1,69 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Buglight</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/cerulean/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="{% static 'css/custom.css' %}">
+
+	<link rel="icon" href="{% static 'images/bug-zap-icon.png' %}">
+
+
+</head>
+
+
+<body>
+	<!-- Fixed masthead -->
+	<nav class="navbar-fixed-top" >
+        <div class="logo">
+            <a class="navbar-brand" href="{% url 'index' %}">Buglight</a>
+        </div>
+        <ul class="nav-links">
+            {% if user.is_authenticated %}
+					<li><a href="{% url 'profile' %}">Profile</a></li>
+					<li><a href="{% url 'logout' %}">Log Out</a></li>
+					{%  else %}
+					<li><a href="{% url 'register' %}">Register</a></li>
+					<li><a href="{% url 'login' %}">Log In</a></li>
+					<li><a href="{% url 'about' %}">About</a></li>
+					{% endif %}
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+
+	<div class="container base-main">
+		{% if messages %}
+		<div class="alert alert-success">
+			<div class="messages">
+				{% for message in messages %}
+				{{ message }}
+				{% endfor %}
+			</div>
+		</div>
+		{% endif %}
+		{% block content %}
+
+		{% endblock %}
+	</div>
+	<footer>
+		<div class="container">
+			<p>Footer Here - Zac Warner etc.</p>
+		</div>
+	</footer>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="{% static 'js/app.js' %}"></script>
+
+</html>
