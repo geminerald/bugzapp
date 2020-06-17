@@ -1,17 +1,9 @@
-*{
-    padding:0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-
-
 nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
     min-height: 8vh;
-    background-color: #5d4954;
+    background: transparent;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -21,6 +13,15 @@ nav{
     letter-spacing: 5px;
     font-size: 20px;
 
+}
+
+.bz-logo{
+    color: white;
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none !important;
 }
 
 .nav-links{
@@ -68,7 +69,7 @@ body{
 }
 
     .nav-links{
-        position: absolute;;
+        position: absolute;
         right:0px;
         height:92vh;
         top: 8vh;
