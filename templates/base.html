@@ -35,18 +35,18 @@
 	<!-- Fixed masthead -->
 	<nav class="navbar-fixed-top" >
         <div class="logo">
-            <a class="navbar-brand" href="{% url 'index' %}">Buglight</a>
+            <a class="navbar-brand" href="#">Buglight</a>
         </div>
         <ul class="nav-links">
             {% if user.is_authenticated %}
-					<li><a href="{% url 'profile' %}">Profile</a></li>
-					<li><a href="{% url 'logout' %}">Log Out</a></li>
+					<li><a href="#">Profile</a></li>
+					<li><a href="#">Log Out</a></li>
 					{%  else %}
-					<li><a href="{% url 'register' %}">Register</a></li>
-					<li><a href="{% url 'login' %}">Log In</a></li>
+					<li><a href="#">Register</a></li>
+					<li><a href="#">Log In</a></li>
 					{% endif %}
                     
-					<li><a href="{% url 'about' %}">About</a></li>
+					<li><a href="#">About</a></li>
         </ul>
         <div class="burger">
             <div class="line1"></div>
@@ -66,6 +66,10 @@
 			</div>
 		</div>
 		{% endif %}
+
+        {% block page_header%}
+
+		{% endblock %}
 		{% block content %}
 
 		{% endblock %}
