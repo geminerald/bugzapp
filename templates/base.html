@@ -35,15 +35,15 @@
 	<!-- Fixed masthead -->
 	<nav class="navbar-fixed-top" >
         <div class="logo">
-            <a class="navbar-brand" href="#">Buglight</a>
+            <a class="navbar-brand" href="{% url 'home' %}">BugzApp</a>
         </div>
         <ul class="nav-links">
-            {% if user.is_authenticated %}
+            {% if request.user.is_authenticated %}
 					<li><a href="#">Profile</a></li>
-					<li><a href="#">Log Out</a></li>
+					<li><a href="{% url 'account_logout' %}">Log Out</a></li>
 					{%  else %}
-					<li><a href="#">Register</a></li>
-					<li><a href="#">Log In</a></li>
+					<li><a href="{% url 'account_signup' %}">Register</a></li>
+					<li><a href="{% url 'account_login' %}">Log In</a></li>
 					{% endif %}
                     
 					<li><a href="#">About</a></li>
