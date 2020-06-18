@@ -31,7 +31,7 @@ Offering a free version for individuals who want to use it on personal projects 
     - [Databse Schema](#database-schema)
 
 - [Features](#features)
-    - [Implemented](#implemented-features)
+    - [Implemented](#developed-features)
     - [In Development](#features-in-development)
     - [To be Developed](#features-to-be-developed)
 
@@ -125,15 +125,19 @@ $success-color: #a1e44d; // success-green
 
 ### Wireframes
 
-### Data Schema
+### Site Map
 
-### Flowchart
+### Flowcharts
+
+### Database Schema
 
 ### Models
 
 ## Features
 
 ### Developed Features
+
+### Features in Development
 
 ### Features to be Developed
 
