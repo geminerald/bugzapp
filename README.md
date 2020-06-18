@@ -93,17 +93,13 @@ technology. The colour scheme was taken from coolers.co and is currently as foll
 
 ### Fonts
 
+Archivo
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&display=swap');
+
 ### Icons
 
 ### Colours
-
-
-* Rich Black: #00020e;
-* Oxford Blue: #030a3e;
-* Dark Royal Blue: #072e65;
-* Blue Yonder: #4178aa;
-* Purple Pizzaz #ff47daff;
-* White #fefcfb;
 
 ### Root Styles
 
