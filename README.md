@@ -151,6 +151,8 @@ $success-color: #a1e44d; // success-green
 
 ### Images
 
+The images for this project were largely taken from [Pexels](https://www.pexels.com/) which has been a great resource for stock and background images. 
+
 ### Backgrounds
 
 ## Planning
