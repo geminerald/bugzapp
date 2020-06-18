@@ -169,6 +169,12 @@ The images for this project were largely taken from [Pexels](https://www.pexels.
 
 ### Models
 
+User Model
+
+Bug Model
+
+Organisation Model
+
 ## Features
 
 ### Developed Features
@@ -184,6 +190,7 @@ The images for this project were largely taken from [Pexels](https://www.pexels.
 - Payment System
 - Bug Model
 - User Model
+- Organisation Model
 - Profile Page
 - Checkout System
 - Cart Page
