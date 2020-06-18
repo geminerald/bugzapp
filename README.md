@@ -155,6 +155,8 @@ The images for this project were largely taken from [Pexels](https://www.pexels.
 
 ### Backgrounds
 
+[Home Page Background](https://www.pexels.com/photo/illuminated-cityscape-against-blue-sky-at-night-316093/) courtesy of [Pixabay](https://www.pexels.com/@pixabay)
+
 ## Planning
 
 ### Wireframes
