@@ -100,21 +100,45 @@ technology. The colour scheme was taken from coolers.co and is currently as foll
 
 ### Fonts
 
+The **Archivo** font was chosen for this project as it was **clear** and **concise** with a variety of different font weights available. It is **similar to Helvetica** which is well known throughout the technology field as a popular choice for website design.
+
 ### Icons
 
 ### Colours
 
+Colour Scheme Info
+
+#### Colour Code
+
 ```scss
-$primary-color: #020A63; // primary
-$secondary-color: #727072; // secondary
-$tertiary-color: #00bfb3; // tertiary 
+$primary-color: #3700B3; // primary
+$secondary-color: #03dac6; // secondary
+$tertiary-color: #bb86fc; // tertiary 
 $white-color: #fdfffc; // white
 $off-white-color: #efe9e7; // off-white
-$black-color: #03030b; // black
+$black-color: #121212; // black
 $required-color: #980707 ; // required-red
-$error-color: #f64740; // error-red
+$error-color: #cf6679; // error-red
 $success-color: #a1e44d; // success-green
 ```
+
+
+#### Colour Samples Table
+
+| Placeholder | Name | Hex | Description |
+| --- | --- | --- | --- |
+| ![#3700b3](https://placehold.it/15/3700b3/000000?text=+) | **"Trypan Blue"** | #3700B3 | Colour Info Here |
+| ![#03dac6](https://placehold.it/15/03dac6/000000?text=+) | **"Turquoise"**  | #03DAC6 | Colour Info Here | 
+| ![#bb86fc](https://placehold.it/15/bb86fc/000000?text=+) | **"Lavendar Floral"** | #BB86FC | Colour Info Here |
+| ![#fdfffc](https://placehold.it/15/fdfffc/000000?text=+) | **"Baby Powder"** | #FDFFFC  | White |
+| ![#efe9e7](https://placehold.it/15/efe9e7/000000?text=+) | **"Isabelline"** | #EFE9E7 | Off White |
+| ![#121212](https://placehold.it/15/121212/000000?text=+) | **"Rich Black Fogra"** | #121212 | Black |
+| ![#1e1e1e](https://placehold.it/15/1e1e1e/000000?text=+) | **"Eerie Black"** | #1E1E1E | Background Grey |
+| ![#cf6679](https://placehold.it/15/cf6679/000000?text=+) | **"Cinnamon Satin"**  | #cf6679 | Error Red |
+| ![#980707](https://placehold.it/15/980707/000000?text=+) | **"Dark Red"** |  #980707 | Required Red |
+| ![#a1e44d](https://placehold.it/15/a1e44d/000000?text=+) | **"Inchworm"** | #a1e44d | Success Green |
+
+
 ### Root Styles
 
 ### Images
