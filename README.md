@@ -20,7 +20,7 @@ Offering a free version for individuals who want to use it on personal projects 
     - [Fonts](#fonts)
     - [Icons](#icons)
     - [Colours](#colours)
-    - [Styling](#styling)
+    - [Styling](#root-styles)
     - [Images](#images)
     - [Backgrounds](#backgrounds)
 
@@ -35,8 +35,16 @@ Offering a free version for individuals who want to use it on personal projects 
     - [In Development](#features-in-development)
     - [To be Developed](#features-to-be-developed)
 
+- [Technologies](#technologies)
 
-## User Experience
+- [Testing](#testing)
+
+- [Bugs](#bugs)
+
+- [Credits](#credits)
+
+
+## UX
 
 ### Project Goals
 
@@ -56,8 +64,7 @@ the issues as required.
 * Provide users with a service to track their software issues and generate revenue from paid version/ subscription.
 * Generate revenue with advertising space targeted at software teams since this is the target audience.
 
-
-### User Stories:
+### User Stories
 
 * "I need a way to track issues for projects that I was working on. Notepad or sticky notes are just cluttered and often deleted or impossible to find" - John
 * "I always think that you should let someone try a product before they buy it. It just makes it easier for everyone to get what they want" - Deborah
@@ -93,8 +100,6 @@ technology. The colour scheme was taken from coolers.co and is currently as foll
 
 ### Fonts
 
-Archivo
-
 ### Icons
 
 ### Colours
@@ -112,19 +117,30 @@ $success-color: #a1e44d; // success-green
 ```
 ### Root Styles
 
-
 ### Images
 
-## Wireframes
+### Backgrounds
+
+## Planning
+
+### Wireframes
 
 ### Data Schema
 
 ### Flowchart
 
-## Models:
+### Models
 
-## Features:
+## Features
 
 ### Developed Features
 
 ### Features to be Developed
+
+## Technologies
+
+## Testing
+
+## bugs
+
+## Credits
