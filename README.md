@@ -169,12 +169,54 @@ $success-color: #a1e44d; // success-green
 
 ### Features in Development
 
+- Home Page
+- Authentication System
+
 ### Features to be Developed
+
+- About Page
+- Payment System
+- Bug Model
+- User Model
+- Profile Page
+- Checkout System
+- Cart Page
+- Cart System
+- Checkout & Payment Page
 
 ## Technologies
 
+### Core Technologies:
+
+- HTML
+- CSS
+- JavaScript
+- Python
+- Git
+
+### Libraries/ Frameworks:
+
+- CSS:
+    - Bootstrap
+    - Sass
+- JavaScript:
+    - Sweet Alerts
+    - Stripe
+
+- Python:
+    - Django
+
+- Git:
+    - GitHub
+    - Gitpod
+
+### API/ External Resources:
+
+- Gitpod
+- Stripe
+
 ## Testing
 
-## bugs
+## Bugs
 
 ## Credits
