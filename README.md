@@ -6,6 +6,36 @@ An Online Bug tracker offering convenient ways to monitor and update statuses of
 
 Offering a free version for individuals who want to use it on personal projects or for study or a competitively priced paid version for companies with a 2 week free trial offer.
 
+
+## Contents:
+
+- [UX](#user-experience)
+    - [Project Goals](#project-goals)
+    - [User Goals](#user-goals)
+    - [Site Owner Goals](#site-owner-goals)
+    - [User Stories](#user-stories)
+    - [User Requirements and Expectations](#user-requirements-and-expectations)
+
+- [Design](#design)
+    - [Fonts](#fonts)
+    - [Icons](#icons)
+    - [Colours](#colours)
+    - [Styling](#styling)
+    - [Images](#images)
+    - [Backgrounds](#backgrounds)
+
+- [Planning](#planning)
+    - [Wireframes](#wireframes)
+    - [Site Map](#site-map)
+    - [Flowcharts](#flowcharts)
+    - [Databse Schema](#database-schema)
+
+- [Features](#features)
+    - [Implemented](#implemented-features)
+    - [In Development](#features-in-development)
+    - [To be Developed](#features-to-be-developed)
+
+
 ## User Experience
 
 ### Project Goals
