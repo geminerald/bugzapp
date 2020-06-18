@@ -106,24 +106,13 @@ The **Archivo** font was chosen for this project as it was **clear** and **conci
 
 ### Colours
 
-Colour Scheme Info
+The colour scheme was based on a "Dark Mode" theme - this is extremely popular with developers and IT professionals and so was chosen to reflect the target audience.
 
-#### Colour Code
-
-```scss
-$primary-color: #3700B3; // primary
-$secondary-color: #03dac6; // secondary
-$tertiary-color: #bb86fc; // tertiary 
-$white-color: #fdfffc; // white
-$off-white-color: #efe9e7; // off-white
-$black-color: #121212; // black
-$required-color: #980707 ; // required-red
-$error-color: #cf6679; // error-red
-$success-color: #a1e44d; // success-green
-```
-
+Most people report that dark mode themese are easier on the eyes for people who have to spend extended periods looking at a screen. The classic dark mode colours are a dark background, white fonts and bright accent colours for contrast.
 
 #### Colour Samples Table
+
+Below is a table showing a sample of the colours chosen for this theme, the name of the colour according to [coolers](https://coolors.co/), the Hex ref and a description of the colour, what it is used for and why it was chosen.
 
 | Placeholder | Name | Hex | Description |
 | --- | --- | --- | --- |
@@ -137,6 +126,23 @@ $success-color: #a1e44d; // success-green
 | ![#cf6679](https://placehold.it/15/cf6679/000000?text=+) | **"Cinnamon Satin"**  | #cf6679 | Error Red |
 | ![#980707](https://placehold.it/15/980707/000000?text=+) | **"Dark Red"** |  #980707 | Required Red |
 | ![#a1e44d](https://placehold.it/15/a1e44d/000000?text=+) | **"Inchworm"** | #a1e44d | Success Green |
+
+
+#### Colour Code
+
+This is the scss code used for the various colours used in this project. 
+
+```scss
+$primary-color: #3700B3; // primary
+$secondary-color: #03dac6; // secondary
+$tertiary-color: #bb86fc; // tertiary 
+$white-color: #fdfffc; // white
+$off-white-color: #efe9e7; // off-white
+$black-color: #121212; // black
+$required-color: #980707 ; // required-red
+$error-color: #cf6679; // error-red
+$success-color: #a1e44d; // success-green
+```
 
 
 ### Root Styles
