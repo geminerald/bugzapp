@@ -95,12 +95,21 @@ technology. The colour scheme was taken from coolers.co and is currently as foll
 
 Archivo
 
-@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&display=swap');
-
 ### Icons
 
 ### Colours
 
+```scss
+$primary-color: #020A63; // primary
+$secondary-color: #727072; // secondary
+$tertiary-color: #00bfb3; // tertiary 
+$white-color: #fdfffc; // white
+$off-white-color: #efe9e7; // off-white
+$black-color: #03030b; // black
+$required-color: #980707 ; // required-red
+$error-color: #f64740; // error-red
+$success-color: #a1e44d; // success-green
+```
 ### Root Styles
 
 
