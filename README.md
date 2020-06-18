@@ -104,6 +104,8 @@ The **Archivo** font was chosen for this project as it was **clear** and **conci
 
 ### Icons
 
+The icons for this project came from [Font Awesome](https://fontawesome.com/6?next=%2F) as they are universally highly regarded as having a great selection of icons for development.
+
 ### Colours
 
 The colour scheme was based on a "Dark Mode" theme - this is extremely popular with developers and IT professionals and so was chosen to reflect the target audience.
