@@ -41,3 +41,34 @@
     height: 5rem;
 
 }
+
+
+.welcome-message{
+    background-color: var(--background-grey);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2rem;
+    border-radius: 6px;
+    position: fixed;
+    top:0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    animation: disappear 2s linear 2s forwards;
+    opacity: 1;
+    z-index: 5;
+}
+
+@keyframes disappear {
+    from {
+        opacity: 1;   
+        z-index: 5;
+    }
+    to {
+        opacity: 0;
+        z-index: -5;
+    }
+
+}
