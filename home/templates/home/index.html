@@ -1,10 +1,12 @@
 {% extends 'base.html' %} {% load static %} {% block extra_css %}
 <link rel="stylesheet" href="{% static 'css/index.css' %}" />
 {% endblock %} {% block content %}
+{% if not request.user.is_authenticated %}
 <div class="welcome-message">
 	<h1>Welcome to BugzApp</h1>
 	<h2>Solution to your bug tracking needs</h2>
 </div>
+{% endif %}
 <div class="cards">
 	<div class="card">
 		<a href="{% url 'account_signup' %}">
@@ -30,5 +32,4 @@
 	</div>
 </div>
 <div class="carousel"></div>
-<div class="testimonials"></div>
 {% endblock %}

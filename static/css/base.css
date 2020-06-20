@@ -56,7 +56,6 @@ footer{
     flex-direction: column;
     min-height: 60vh;
     margin-top: 10vh;
-    border-radius: 6px;
 }
 
 .overlay{
