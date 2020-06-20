@@ -1,13 +1,38 @@
-{% extends 'base.html' %} 
-
-{% load static %} 
-
-{% block content %}
+{% extends 'base.html' %} {% load static %} {% block content %}
 
 <div class="overlay"></div>
 
 <h1>Tickets page</h1>
+<hr />
+<div class="search-and-filter">
+  <form method="GET" action="">
+    <div class="input-group w-100">
+      <input
+        class="form-control"
+        type="text"
+        name="q"
+        placeholder="Search Tickets"
+      />
+      <div class="input-group-append">
+        <button
+          class="form-control btn border-black rounded-0"
+          type="submit"
+        ><span class="text-success">
+          Search</span>
+        </button>
+      </div>
+    </div>
+  </form>
+</div>
+<hr />
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis aperiam quidem, vero impedit reiciendis voluptate. Repellendus sint voluptatibus quasi pariatur ex dolorem quo reiciendis asperiores eius et eum commodi aliquid, tempore libero illum totam possimus at quisquam consequuntur impedit dicta. Reiciendis fuga soluta harum omnis consectetur animi illum placeat qui sapiente ad pariatur repellendus, doloribus cupiditate. Eius nobis excepturi error magnam eum voluptas, doloribus quis numquam omnis natus quasi suscipit aliquam minima rem placeat laboriosam animi ratione nulla. Ea incidunt repellat nihil esse pariatur? Provident molestias dicta, neque, soluta nostrum facilis aspernatur est vero laboriosam aperiam earum eos ipsa excepturi?
-
-{% endblock %}
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis aperiam
+quidem, vero impedit reiciendis voluptate. Repellendus sint voluptatibus quasi
+pariatur ex dolorem quo reiciendis asperiores eius et eum commodi aliquid,
+tempore libero illum totam possimus at quisquam consequuntur impedit dicta.
+Reiciendis fuga soluta harum omnis consectetur animi illum placeat qui sapiente
+ad pariatur repellendus, doloribus cupiditate. Eius nobis excepturi error magnam
+eum voluptas, doloribus quis numquam omnis natus quasi suscipit aliquam minima
+rem placeat laboriosam animi ratione nulla. Ea incidunt repellat nihil esse
+pariatur? Provident molestias dicta, neque, soluta nostrum facilis aspernatur
+est vero laboriosam aperiam earum eos ipsa excepturi? {% endblock %}
