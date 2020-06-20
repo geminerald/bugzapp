@@ -35,6 +35,7 @@ body {
     height: calc(100vh - 164px);
     color: var(--white-colour);
     font-family: 'Archivo', sans-serif;
+    font-size: 1.7rem;
 }
 
 footer{
