@@ -39,8 +39,8 @@
 	{% if request.user.is_authenticated %}
 
 
-	<div class="card"><a href="#">Test1</a></div>
-	<div class="card"><a href="#">Test2</a></div>
+	<div class="card"><a href="{% url 'tickets' %}">Test1</a></div>
+	<div class="card"><a href="{% url 'tickets' %}">Test2</a></div>
 
 	{% endif %}
 </div>
