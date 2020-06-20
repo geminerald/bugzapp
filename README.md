@@ -161,6 +161,8 @@ The images for this project were largely taken from [Pexels](https://www.pexels.
 
 ### Wireframes
 
+To view the wireframes for this project please go to the [Wireframes Folder](https://github.com/geminerald/bugzapp/tree/master/wireframes)
+
 ### Site Map
 
 ### Flowcharts
@@ -183,12 +185,12 @@ Organisation Model
 
 - Home Page
 - Authentication System
+- Ticket Model
 
 ### Features to be Developed
 
 - About Page
 - Payment System
-- Bug Model
 - User Model
 - Organisation Model
 - Profile Page
