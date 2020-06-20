@@ -15,6 +15,12 @@ nav{
 
 }
 
+
+.navbar-fixed-top.scrolled {
+  background-color: var(--secondary-colour) !important;
+  transition: background-color 200ms linear;
+}
+
 .bz-logo{
     color: white;
     text-decoration: none;
