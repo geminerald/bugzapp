@@ -2,3 +2,22 @@
 .testimonials{
     min-height: 200vh;
 }
+
+.cards{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.card{
+    height: 25rem;
+    width: 25rem;
+    background-color: var(--white-colour);
+    color: var(--black-colour);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

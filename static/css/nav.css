@@ -17,7 +17,7 @@ nav{
 
 
 .navbar-fixed-top.scrolled {
-  background-color: var(--secondary-colour) !important;
+  background-color: var(--background-grey) !important;
   transition: background-color 200ms linear;
 }
 
