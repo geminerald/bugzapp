@@ -55,7 +55,7 @@ footer{
     align-items: center;
     flex-direction: column;
     min-height: 60vh;
-    background-color: rgba(135,135,135,0.5);
+    background-color:rgba(135, 135, 135, 0.5);
     margin-top: 10vh;
     border-radius: 6px;
 }
@@ -68,4 +68,10 @@ footer{
     top: 0;
     left: 0;
     z-index: -1;
+}
+
+
+h1, h2, h3, h4, h5{
+    color: var(--off-white-colour);
+    margin-top: 3rem;
 }

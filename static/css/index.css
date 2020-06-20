@@ -14,13 +14,27 @@
 .card{
     height: 25rem;
     width: 25rem;
-    background-color: var(--white-colour);
-    color: var(--black-colour);
-    display: flex;
+    background-color: var(--background-grey);
+    color: var(--white-colour);
+    
+    font-size: 2rem;
+    border-radius: 0.6rem;
+    box-shadow: 0 4px 8px 0 rgba(241, 239, 239, 0.2);
+    transition: 0.3s;
+}
+
+.card:hover{
+    box-shadow: 0 32px 64px 0 rgba(255, 255, 255, 0.2);
+}
+
+.card a{
+    color: var(--white-colour);
+    text-decoration: none !important;
+    height: 100%;
+    width: 100%;display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    font-size: 2rem;
 }
 
 .card svg{
