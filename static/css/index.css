@@ -82,3 +82,18 @@
     }
 
 }
+
+
+#carouselExampleSlidesOnly{
+    margin-top: 12rem;
+    margin-bottom: 15rem;
+    background-color: var(--background-grey);
+    color: var(--black-colour);
+    min-height: 10rem;
+    width: 100%;
+}
+
+.carousel-item img{
+    width: 100%;
+    background: url('/media/home-bg-image.jpg') no-repeat center center fixed;
+}

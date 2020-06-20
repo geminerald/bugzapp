@@ -186,10 +186,10 @@ Organisation Model
 - Home Page
 - Authentication System
 - Ticket Model
+- About Page
 
 ### Features to be Developed
 
-- About Page
 - Payment System
 - User Model
 - Organisation Model

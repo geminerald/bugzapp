@@ -39,7 +39,7 @@ body {
 }
 
 footer{
-    position: fixed;
+    position: static;
     bottom:20px;
     width: 100%;
     min-height: 40px;
