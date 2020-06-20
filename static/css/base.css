@@ -1,5 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&display=swap');
 
+
+:root {
+    --primary-colour: #3700B3; 
+    --secondary-colour:#03dac6;
+    --tertiary-colour:#bb86fc;
+    --white-colour:#fdfffc;
+    --off-white-colour:#efe9e7;
+    --background-grey:#1e1e1e;
+    --black-colour:#121212;
+    --required-colour:#980707;
+    --error-colour:#cf6679;
+    --success-colour:#a1e44d;
+
+}
+
+
 body {
     background: url('/media/home-bg-image.jpg') no-repeat center center fixed;
     background-size: cover;
