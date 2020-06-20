@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&display=swap');
 
+/* Root Colours */
 
 :root {
     --primary-colour: #3700B3; 
@@ -15,6 +16,7 @@
 
 }
 
+/* Universals */
 
 body {
     background: url('/media/home-bg-image.jpg') no-repeat center center fixed;
@@ -44,4 +46,11 @@ footer{
     background-color: rgba(135,135,135,0.5);
     margin-top: 10vh;
     border-radius: 6px;
+}
+
+.overlay{
+    background-color: var(--background-grey);
+    position: fixed;
+    height: 100vh;
+    width: 100%;
 }
