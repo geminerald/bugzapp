@@ -19,7 +19,7 @@ def tickets(request):
 
 def viewticket(request, ticket_id):
     """
-    Renders a page showing one specific ticket
+    Renders a page showing one specific ticket taking the ticket ID as a parameter
     """
 
     ticket = get_object_or_404(Ticket, pk=ticket_id)
