@@ -1,6 +1,10 @@
 {% extends 'base.html' %}
 
-{% load static %} 
+{% load static %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/tickets.css' %}" />
+{% endblock %}
 
 {% block content %}
 
@@ -9,34 +13,47 @@
 <h1>Tickets page</h1>
 <hr />
 <div class="search-and-filter">
-  <form method="GET" action="">
-    <div class="input-group w-100">
-      <input
+	<form method="GET" action="">
+		<div class="input-group w-100">
+			<input
         class="form-control"
         type="text"
         name="q"
         placeholder="Search Tickets"
       />
-      <div class="input-group-append">
-        <button
+			<div class="input-group-append">
+				<button
           class="form-control btn border-black rounded-0"
           type="submit"
         ><span class="text-success">
           Search</span>
         </button>
-      </div>
-    </div>
-  </form>
+			</div>
+		</div>
+	</form>
 </div>
 <hr />
 
 {% for ticket in tickets %}
 
-    <div class="row">
-    <h3>{{ ticket.title }}</h3>
-    <h4>{{ ticket.status }}</h4>
-    <a href="{% url 'viewticket' ticket.id %}">View Ticket</a>
+<div class="row ticket">
+	<div class="col">
+		<h3>{{ ticket.title }}</h3>
+		<h4>{{ ticket.status }}</h4>
+	</div>
+	<div class="col">
+		<h5>Bug Type</h5>
+		<div class="tag">Tag</div>
+		<div class="tag">Tag</div>
+		<div class="tag">Tag</div>
+	</div>
+	<div class="col">
+		{{ ticket.description }}
+	</div>
+	<div class="col">
+		<a href="{% url 'viewticket' ticket.id %}">View Ticket</a>
     </div>
+</div>
 
 {% endfor %}
 
