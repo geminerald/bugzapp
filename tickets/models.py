@@ -17,7 +17,7 @@ class Ticket(models.Model):
     )
 
     title = models.CharField(max_length=70)
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    user = models.ForeignKey(User, on_delete=models.CASCADE, null=True, blank=True,)
     description = models.TextField()
     type = models.CharField(max_length=7, choices=TYPE_CHOICES)
     status = models.CharField(max_length=20, choices=STATUS_CHOICES, default="opened")

@@ -30,15 +30,14 @@
 </div>
 <hr />
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis aperiam
-quidem, vero impedit reiciendis voluptate. Repellendus sint voluptatibus quasi
-pariatur ex dolorem quo reiciendis asperiores eius et eum commodi aliquid,
-tempore libero illum totam possimus at quisquam consequuntur impedit dicta.
-Reiciendis fuga soluta harum omnis consectetur animi illum placeat qui sapiente
-ad pariatur repellendus, doloribus cupiditate. Eius nobis excepturi error magnam
-eum voluptas, doloribus quis numquam omnis natus quasi suscipit aliquam minima
-rem placeat laboriosam animi ratione nulla. Ea incidunt repellat nihil esse
-pariatur? Provident molestias dicta, neque, soluta nostrum facilis aspernatur
-est vero laboriosam aperiam earum eos ipsa excepturi? 
+{% for ticket in tickets %}
+
+    <div class="row">
+    <h3>{{ ticket.title }}</h3>
+    <h4>{{ ticket.status }}</h4>
+    <a href="{% url 'viewticket' ticket.id %}">View Ticket</a>
+    </div>
+
+{% endfor %}
 
 {% endblock %}
