@@ -85,20 +85,15 @@
 
 }
 
-
-#carouselExampleSlidesOnly{
-    margin-top: 12rem;
-    margin-bottom: 15rem;
-    background-color: var(--background-grey);
-    color: var(--black-colour);
-    min-height: 10rem;
-    width: 100%;
-    
+.carousel{
+    padding: 2rem;
+    background-color: var(--black-colour);
+    margin-top: 5rem;
 }
 
 .carousel-item img{
     width: 100%;
-    height: 20rem;
+    height: 25rem;
 }
 
 .home-about{
