@@ -1,6 +1,6 @@
 from django.db import models
-from django.conf import settings
-from django.utils import timezone
+from django.contrib.auth.models import User
+
 
 class Ticket(models.Model):
     '''
@@ -17,7 +17,7 @@ class Ticket(models.Model):
     )
 
     title = models.CharField(max_length=70)
-    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
     description = models.TextField()
     type = models.CharField(max_length=7, choices=TYPE_CHOICES)
     status = models.CharField(max_length=20, choices=STATUS_CHOICES, default="opened")
