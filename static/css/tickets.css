@@ -3,6 +3,9 @@
     border-radius: 6px;
     width: 100%;
     padding: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    color: var(--black-colour);
 }
 
 .search-and-filter form{
