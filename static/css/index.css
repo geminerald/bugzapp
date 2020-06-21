@@ -9,6 +9,8 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    flex-flow: row wrap;
+    margin-top: 7rem;
 }
 
 .card{
@@ -16,7 +18,7 @@
     width: 25rem;
     background-color: var(--background-grey);
     color: var(--white-colour);
-    
+    margin: 2rem auto;
     font-size: 2rem;
     border-radius: 0.6rem;
     box-shadow: 0 4px 8px 0 rgba(241, 239, 239, 0.2);
@@ -97,6 +99,7 @@
 .home-about{
     display: flex;
     flex-direction: row;
+    margin-top: 12rem;
     margin-bottom: 7rem;
     justify-content: space-evenly;
     width: 100%;
@@ -115,6 +118,7 @@
     align-items: center;
     padding:2rem;
     text-align: center;
+    margin: 2rem auto;
 }
 
 .reason h3{
