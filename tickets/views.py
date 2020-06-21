@@ -1,5 +1,6 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, redirect
 from .models import Ticket
+from .forms import AddForm
 
 # Create your views here.
 
@@ -29,3 +30,19 @@ def viewticket(request, ticket_id):
     }
 
     return render(request, 'viewticket.html', context)
+
+
+def addticket(request):
+
+    if request.method == "POST":
+        add_ticket_form = AddForm(request.POST, request.FILES)
+        if add_ticket_form.is_valid():
+            ticket = add_ticket_form.save(commit=False)
+            # commit=False tells Django that "Don't send this to database yet.
+            # I have more things I want to do with it."
+            ticket.user = request.user  # Set the user object here
+            ticket.save()  # Now you can send it to DB
+            return redirect('tickets')
+    else:
+        add_ticket_form = AddForm()
+    return render(request, 'addticket.html', {'add_ticket_form': add_ticket_form})

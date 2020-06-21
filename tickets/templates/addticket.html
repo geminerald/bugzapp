@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% load static %} 
+
+{% block content %}
+
+<div class="overlay"></div>
+
+<h1>Add Tickets page</h1>
+<form method="POST" class="mt-1 mt-md-3 mr-auto ml-auto clearfix" enctype="multipart/form-data">
+        {% csrf_token %}
+        <div class="form-row">
+            <div class="form-group col-xs-12 col-md-6">
+                {{ add_ticket_form.title  }}
+            </div>
+            <div class="form-group col-xs-12 col-md-3">
+                {{ add_ticket_form.type  }}
+            </div>
+            
+        </div>
+        <div class="form-row">
+            <div class=" form-group col">
+                {{ add_ticket_form.description  }}
+            </div>
+        </div>
+       
+        <button class="btn btn-success float-right mt-3" type="submit">Submit</button>
+    </form>
+{% endblock %}
