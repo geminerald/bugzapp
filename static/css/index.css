@@ -57,11 +57,9 @@
     left: 0;
     height: 100vh;
     width: 100%;
-   
-   /*Remember to change this back!*/
-  /* animation: disappear 2s ease-in-out 2s forwards;*/
-    opacity: 0;
-    z-index: -5;
+   animation: disappear 2s ease-in-out 2s forwards;
+    opacity: 1;
+    z-index: 5;
 }
 
 .welcome-message h1,h2{
