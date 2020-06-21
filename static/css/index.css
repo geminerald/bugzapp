@@ -57,9 +57,11 @@
     left: 0;
     height: 100vh;
     width: 100%;
-   animation: disappear 2s ease-in-out 2s forwards;
-    opacity: 1;
-    z-index: 5;
+   
+   /*Remember to change this back!*/
+  /* animation: disappear 2s ease-in-out 2s forwards;*/
+    opacity: 0;
+    z-index: -5;
 }
 
 .welcome-message h1,h2{
@@ -97,4 +99,30 @@
 .carousel-item img{
     width: 100%;
     height: 20rem;
+}
+
+.home-about{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 7rem;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.reason{
+    color: var(--white-colour);
+    background-color: var(--background-grey);
+    height: 25rem;
+    width: 20rem;
+    box-shadow: 0 32px 64px 0 rgba(3, 218, 198, 1);
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    padding:2rem;
+    text-align: center;
+}
+
+.reason h3{
+    margin-top:0;
 }
