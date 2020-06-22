@@ -25,11 +25,15 @@ class Order(models.Model):
 
     def update_total(self):
         self.order_total = self.lineitems.aggregate(Sum('line_total'))['line_total__sum']
+        self.save()
 
     def save(self, *args, **kwargs):
         if not self.order_number:
             self.order_number = self._generate_order_number()
         super().save(*args, **kwargs)
+
+    def __str__(self):
+        return self.order_number
 
 
 class OrderLine(models.Model):
@@ -37,4 +41,11 @@ class OrderLine(models.Model):
     product = models.ForeignKey(Product, null=False, blank=False, on_delete=models.CASCADE)
     quantity = models.IntegerField(null=False, blank=False, default=0)
     line_total = models.DecimalField(max_digits=6, decimal_places=2, null=False, blank=False)
+
+    def save(self, *args, **kwargs):
+        self.line_total = self.product.price * self.quantity
+        super().save(*args, **kwargs)
+
+    def __str__(self):
+        return f'product {self.product.name} on order {self.order.order_number}'
 
