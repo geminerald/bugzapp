@@ -23,6 +23,9 @@ class Order(models.Model):
     def _generate_order_number(self):
         return uuid.uuid4().hex,upper()
 
+    def update_total(self):
+        self.order_total = self.lineitems.aggregate(Sum('line_total'))['line_total__sum']
+
     def save(self, *args, **kwargs):
         if not self.order_number:
             self.order_number = self._generate_order_number()
