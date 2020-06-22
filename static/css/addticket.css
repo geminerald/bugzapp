@@ -1,5 +1,4 @@
 .row{
-    border: 2px solid var(--secondary-colour);
     width: 80%;
     padding: 2rem;
     text-align: center;
@@ -37,4 +36,13 @@ form input{
 .notes-button{
     padding: 1rem;
     font-size: 1rem;
+}
+
+.bug-container{
+    border: 2px solid var(--primary-colour);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 16px 32px 0 rgba(55, 0, 179, 1);
 }
