@@ -187,23 +187,24 @@ Organisation Model
 
 ### Developed Features
 
-### Features in Development
-
 - Home Page
 - Authentication System
+
+### Features in Development
+
 - Ticket Model
 - About Page
-
-### Features to be Developed
-
-- Payment System
 - User Model
-- Organisation Model
-- Profile Page
 - Checkout System
 - Cart Page
 - Cart System
 - Checkout & Payment Page
+- Payment System
+
+### Features to be Developed
+
+- Organisation Model
+- Profile Page
 
 ## Technologies
 
