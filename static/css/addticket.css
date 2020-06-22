@@ -4,3 +4,16 @@
     padding: 2rem;
     text-align: center;
 }
+
+.summary-row{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+button{
+    color: var(--black-colour);
+    padding: 1rem;
+    background-color: var(--off-white-colour);
+    border-radius: 6px;
+    font-weight: bolder;
+}
