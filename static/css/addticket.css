@@ -17,3 +17,10 @@ button{
     border-radius: 6px;
     font-weight: bolder;
 }
+
+hr{
+     height: 1px;
+        background-color: var(--white-colour);
+        border: none;
+        width: 50%;
+}

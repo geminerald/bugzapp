@@ -14,7 +14,7 @@
     <p>Created by {{ ticket.user }} on {{ ticket.creation_date }}</p>
   </div>
 </div>
-
+<hr>
 <div class="row summary-row">
   <div class="col">
     Type: {{ ticket.type }}
@@ -22,7 +22,7 @@
   <div class="col">Status: {{ ticket.status }}</div>
   <div class="col">Score: {{ ticket.score }}</div>
 </div>
-
+<hr>
 <div class="row description-row">
   <div class="col"><h2>Notes</h2></div>
   <div class="col">{{ ticket.description }}</div>
