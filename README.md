@@ -27,8 +27,6 @@ Offering a free version for individuals who want to use it on personal projects 
 - [Planning](#planning)
     - [Wireframes](#wireframes)
     - [Site Map](#site-map)
-    - [Flowcharts](#flowcharts)
-    - [Databse Schema](#database-schema)
 
 - [Features](#features)
     - [Implemented](#developed-features)
@@ -96,15 +94,7 @@ Therefore providing the best UX, proper authentication and using secure payment 
 ## Design
 
 As this is targeted at the technology sector the colour scheme is based on a 'Dark Mode' colour palate since this is common and preferred in this sector and is also prevelant in the imagery of
-technology. The colour scheme was taken from coolers.co and is currently as follows (TBC):
-
-### Fonts
-
-The **Archivo** font was chosen for this project as it was **clear** and **concise** with a variety of different font weights available. It is **similar to Helvetica** which is well known throughout the technology field as a popular choice for website design.
-
-### Icons
-
-The icons for this project came from [Font Awesome](https://fontawesome.com/6?next=%2F) as they are universally highly regarded as having a great selection of icons for development.
+technology. The colour scheme was taken from [coolers.co](https://coolors.co/1e1e1e-3700b3-03dac6-bb86fc-fdfffc) and is currently as follows:
 
 ### Colours
 
@@ -152,6 +142,14 @@ This is the css code used for the various colours used in this project.
 
 ```
 
+### Fonts
+
+The **Archivo** font was chosen for this project as it was **clear** and **concise** with a variety of different font weights available. It is **similar to Helvetica** which is well known throughout the technology field as a popular choice for website design.
+
+### Icons
+
+The icons for this project came from [Font Awesome](https://fontawesome.com/6?next=%2F) as they are universally highly regarded as having a great selection of icons for development.
+
 
 ### Root Styles
 
@@ -170,10 +168,6 @@ The images for this project were largely taken from [Pexels](https://www.pexels.
 To view the wireframes for this project please go to the [Wireframes Folder](https://github.com/geminerald/bugzapp/tree/master/wireframes)
 
 ### Site Map
-
-### Flowcharts
-
-### Database Schema
 
 ### Models
 
