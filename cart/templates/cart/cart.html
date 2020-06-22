@@ -22,7 +22,38 @@
         <div class="col">
         {% if cart_items %}
                     <div class="table-responsive rounded">
-                    <p>Your items are: {{ cart_items }}</p>
+                    <table class="table table-sm table-borderless">
+                    <thead>
+                    <th scome="col">Product Info</th>
+                    <th scome="col"></th>
+                    <th scome="col">Price</th>
+                    <th scome="col">Quantity</th>
+                    <th scome="col">Subtotal</th>
+                    </thead>
+                    {% for item in cart_items %}
+                    <tr>
+                        <td>
+                        {{ item.product.name}}
+                        </td>
+                        <td>
+                        {{ item.product.description}}
+                        </td>
+                        <td>
+                        {{ item.product.price}}
+                        </td>
+                        <td>
+                        {{ item.quantity}}
+                        </td>
+                        <td>
+                        {{ total | floatformat:2 }}
+                        </td>
+                    </tr>
+                    {% endfor %}
+                    <td colspan="5" class="pt-5 text-right">
+                                    <h6><strong> Total: €{{ total|floatformat:2 }}</strong></h6>
+                                    
+                                </td>
+                    </table>
                     </div>
                 {% else %}
                     <p class="lead mb-5">Your cart is empty.</p>
