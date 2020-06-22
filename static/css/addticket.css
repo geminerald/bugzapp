@@ -22,5 +22,19 @@ hr{
      height: 1px;
         background-color: var(--white-colour);
         border: none;
-        width: 50%;
+        width: 80%;
+}
+
+form{
+    height: 100%;
+}
+
+form input{
+    height: 90%;
+    border-radius: 6px;
+}
+
+.notes-button{
+    padding: 1rem;
+    font-size: 1rem;
 }
