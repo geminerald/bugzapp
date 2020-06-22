@@ -1,0 +1,22 @@
+.cart-container{
+    background-color: var(--off-white-colour);
+    color: var(--black-colour);
+    padding: 3rem;
+    border-radius: 6px;
+}
+
+.cart-container h2{
+    color: var(--black-colour);
+}
+
+.btn{
+    background-color: var(--black-colour);
+    color: var(--white-colour);
+    border-radius: 3px;
+    border: 2px outset var(--primary-colour);
+}
+
+.btn:hover{
+    background-color: var(--white-colour);
+    color: var(--black-colour);
+}
