@@ -132,18 +132,24 @@ Below is a table showing a sample of the colours chosen for this theme, the name
 
 #### Colour Code
 
-This is the scss code used for the various colours used in this project. 
+This is the css code used for the various colours used in this project. 
 
-```scss
-$primary-color: #3700B3; // primary
-$secondary-color: #03dac6; // secondary
-$tertiary-color: #bb86fc; // tertiary 
-$white-color: #fdfffc; // white
-$off-white-color: #efe9e7; // off-white
-$black-color: #121212; // black
-$required-color: #980707 ; // required-red
-$error-color: #cf6679; // error-red
-$success-color: #a1e44d; // success-green
+```css
+
+:root {
+    --primary-colour: #3700B3; 
+    --secondary-colour:#03dac6;
+    --tertiary-colour:#bb86fc;
+    --white-colour:#fdfffc;
+    --off-white-colour:#efe9e7;
+    --background-grey:#1e1e1e;
+    --black-colour:#121212;
+    --required-colour:#980707;
+    --error-colour:#cf6679;
+    --success-colour:#a1e44d;
+
+}
+
 ```
 
 
