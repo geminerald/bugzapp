@@ -1,8 +1,18 @@
-{% extends 'base.html' %} {% load static %} {% block content %}
+{% extends 'base.html' %} 
+
+{% load static %} 
+
+{% block extra_css %}
+
+<link rel="stylesheet" href="{% static 'css/addticket.css' %}" />
+
+{% endblock %} 
+
+{% block content %}
 
 <div class="overlay"></div>
 
-<div class="row">
+<div class="row title-row">
   <div class="col">
     <h1>{{ ticket.title }}</h1>
   </div>
@@ -10,10 +20,18 @@
     <p>Created by {{ ticket.user }} on {{ ticket.creation_date }}</p>
   </div>
 </div>
-<div class="row">{{ ticket.type }} {{ ticket.status }} {{ ticket.score }}</div>
-<div class="row">{{ ticket.description }}</div>
+
+<div class="row summary-row">
+  {{ ticket.type }} {{ ticket.status }} {{ ticket.score }}
+</div>
+
+<div class="row description-row">
+  <div class="col"><h2>Notes</h2></div>
+  <div class="col">{{ ticket.description }}</div>
+</div>
+
 <div class="row">
-  <div class="col"><button>Save Changes</button></div>
+  <div class="col button-row"><button>Save Changes</button></div>
 </div>
 
 {% endblock %}

@@ -1,0 +1,6 @@
+.row{
+    border: 2px solid var(--secondary-colour);
+    width: 80%;
+    padding: 2rem;
+    text-align: center;
+}
