@@ -11,7 +11,7 @@ nav{
     color: var(--off-white-colour);
     text-transform: uppercase;
     letter-spacing: 5px;
-    font-size: 20px;
+    font-size: 2rem;
 
 }
 
@@ -41,7 +41,7 @@ nav{
     text-decoration: none;
     letter-spacing: 3px;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 1.4rem;
 
 }
 
@@ -51,7 +51,7 @@ nav{
 }
 
 .burger div{
-    width: 25px;
+    width: 2.5rem;
     height: 3px;
     background-color: var(--off-white-colour);
     margin: 5px;

@@ -38,14 +38,18 @@ body {
     font-size: 1.7rem;
 }
 
+/* Footer */
+
 footer{
     position: static;
     margin-top: 5rem;
-    min-height: 40px;
+    min-height: 4rem;
     background-color: var(--background-grey);
     color: var(--off-white-colour);
-    font-size: 20px;
+    font-size: 2rem;
 }
+
+/* Main container across all pages */
 
 .main-container{
     width: 100%;
