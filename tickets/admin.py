@@ -4,8 +4,8 @@ from .models import Ticket
 
 
 class TicketAdmin(admin.ModelAdmin):
-    fields = ['title', 'type', 'status', 'score', 'description', ]
-    readonly_fields = ['user', 'description']
+    fields = ['title', 'type', 'status', 'score', 'description', 'user']
+    readonly_fields = ['user']
 
 
 admin.site.register(Ticket, TicketAdmin)
