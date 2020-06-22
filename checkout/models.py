@@ -2,7 +2,7 @@ import uuid
 from django.db import models
 from django.db.models import Sum
 from django.conf import settings
-
+from products.models import Product
 
 # Create your models here.
 
@@ -23,7 +23,7 @@ class Order(models.Model):
 
 class OrderLine(models.Model):
     order = models.ForeignKey(Order, null=False, blank=False, on_delete=models.CASCADE, related_name='lineitems')
-    #product = models.ForeignKey(Product, null=False, blank=False, on_delete=models.CASCADE)
+    product = models.ForeignKey(Product, null=False, blank=False, on_delete=models.CASCADE)
     quantity = models.IntegerField(null=False, blank=False, default=0)
     line_total = models.DecimalField(max_digits=6, decimal_places=2, null=False, blank=False)
 
