@@ -1,0 +1,8 @@
+form div{
+    padding: 2rem;
+    margin: 3rem;
+}
+
+form{
+    color: var(--black-colour);
+}
