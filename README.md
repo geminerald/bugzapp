@@ -235,4 +235,8 @@ Organisation Model
 
 ## Bugs
 
+Navbar was not fixed to top on scroll. 
+Added position fixed to nav andd top 0
+Resolved
+
 ## Credits

@@ -79,6 +79,14 @@ h1, h2, h3, h4, h5{
 
 /* Borders */
 
-.blue-border{
-    
+.primary-border{
+    border: 2px solid var(--primary-colour);
+}
+
+.secondary-border{
+    border: 2px solid var(--secondary-colour);
+}
+
+.tertiary-border{
+    border: 2px solid var(--tertiary-colour);
 }
