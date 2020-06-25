@@ -81,12 +81,18 @@ h1, h2, h3, h4, h5{
 
 .primary-border{
     border: 2px solid var(--primary-colour);
+    padding: 1rem 6rem 8rem 6rem;
+    border-radius: 6px;
 }
 
 .secondary-border{
     border: 2px solid var(--secondary-colour);
+    padding: 1rem 6rem 8rem 6rem;
+    border-radius: 6px;
 }
 
 .tertiary-border{
     border: 2px solid var(--tertiary-colour);
+    padding: 1rem 6rem 8rem 6rem;
+    border-radius: 6px;
 }
