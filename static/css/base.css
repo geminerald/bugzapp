@@ -13,7 +13,6 @@
     --required-colour:#980707;
     --error-colour:#cf6679;
     --success-colour:#a1e44d;
-
 }
 
 /* Universals */
@@ -94,4 +93,12 @@ h1, h2, h3, h4, h5{
     border: 2px solid var(--tertiary-colour);
     padding: 1rem 6rem 6rem 6rem;
     border-radius: 6px;
+}
+
+button{
+    padding: 1rem;
+    border-radius: 6px;
+    margin: 2rem auto;
+    font-weight: bolder;
+    box-shadow: 0 4px 8px 0 rgba(55, 0, 179, 0.8);
 }
