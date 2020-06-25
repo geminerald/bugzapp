@@ -31,22 +31,10 @@ body {
   color: var(--white-colour);
   font-family: "Archivo", sans-serif;
   font-size: 1.7rem;
-  background-color: var(--background-grey);
-  position: fixed;
-  height: 100vh;
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: -1;
+  
 }
 
-}
 
-.overlay {
-  background: url("/static/images/home-bg-image.jpg") no-repeat center center fixed;
-  background-size: cover;
-  height: calc(100vh - 164px);
-}
 
 /* Footer */
 
@@ -69,6 +57,8 @@ footer {
   flex-direction: column;
   min-height: 60vh;
   margin-top: 10vh;
+  background-color: var(--background-grey);
+  z-index: -1;
 }
 
 
