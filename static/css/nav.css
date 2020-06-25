@@ -5,6 +5,10 @@ nav{
     min-height: 8vh;
     background: transparent;
     font-family: 'Archivo', sans-serif;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
 }
 
 .logo {
@@ -70,7 +74,7 @@ body{
 }
 
     .nav-links{
-        position: absolute;
+        position: fixed;
         right:0px;
         height:92vh;
         top: 8vh;
