@@ -239,4 +239,8 @@ Navbar was not fixed to top on scroll.
 Added position fixed to nav andd top 0
 Resolved
 
+Login page failed to load due to allauth social tag.
+Reverted formatting changes to previous version
+Resolved
+
 ## Credits
