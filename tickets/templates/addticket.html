@@ -4,6 +4,7 @@
 
 {% block extra_css %}
 <link rel="stylesheet" href="{% static 'css/addticket.css' %}">
+<link rel="stylesheet" href="{% static 'css/allauth.css' %}">
 {% endblock%}
 
 {% block content %}
@@ -15,19 +16,24 @@
         {% csrf_token %}
         <div class="form-row">
             <div class="form-group col-xs-12 col-md-6">
+            <label for="title">Title</label>
                 {{ add_ticket_form.title  }}
             </div>
+            
+        <div class="form-row">
             <div class="form-group col-xs-12 col-md-3">
+            <label for="type">Type</label>
                 {{ add_ticket_form.type  }}
             </div>
-            
+        </div>
         </div>
         <div class="form-row">
-            <div class=" form-group col">
+            <div class=" form-group col description">
+            <label for="description">Description of Issue</label>
                 {{ add_ticket_form.description  }}
             </div>
         </div>
        
-        <button class="btn btn-success float-right mt-3" type="submit">Submit</button>
+        <button class="butn float-right mt-3" type="submit">Submit</button>
     </form>
 {% endblock %}
