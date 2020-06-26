@@ -1,0 +1,23 @@
+<nav class="navbar-fixed-top">
+  <div class="logo">
+    <a class="bz-logo" href="{% url 'home' %}">BugzApp</a>
+  </div>
+  <ul class="nav-links">
+    {% if request.user.is_authenticated %}
+    <li><a href="{% url 'account_logout' %}">Logout</a></li>
+    <li><a href="{% url 'tickets' %}">View Tickets</a></li>
+    <li><a href="{% url 'addticket' %}">Add Ticket</a></li>
+    {% else %}
+    <li><a href="{% url 'account_signup' %}">Register</a></li>
+    <li><a href="{% url 'account_login' %}">Login</a></li>
+    {% endif %}
+
+    <li><a href="{% url 'about' %}">About</a></li>
+    <li><a href="{% url 'products' %}">Shop</a></li>
+  </ul>
+  <div class="burger">
+    <div class="line1"></div>
+    <div class="line2"></div>
+    <div class="line3"></div>
+  </div>
+</nav>
