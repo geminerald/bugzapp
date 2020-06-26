@@ -2,10 +2,12 @@
 form{
     z-index: 5;
     color: var(--black-colour);
-    height: 60vh;
+    min-height: 60vh;
     width: 100%;
+    border: 2px solid var(--primary-colour);
+    box-shadow: 0 4px 8px 0 rgba(55, 0, 179, 0.8);
+    padding: 5rem;
 }
-
 label{
     color: var(--white-colour);
     margin: 4rem;
