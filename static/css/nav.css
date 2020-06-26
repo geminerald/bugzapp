@@ -31,7 +31,7 @@ nav{
 
 .nav-links{
     display: flex;
-    width:30%;
+    width:50%;
     justify-content: space-around;
 
 }
@@ -65,7 +65,7 @@ nav{
 
 @media screen and (max-width:1068px){
     .nav-links{
-        width: 50%;
+        width: 65%;
     }
 }
 @media screen and (max-width:768px){
