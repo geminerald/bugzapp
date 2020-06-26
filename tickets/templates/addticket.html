@@ -3,7 +3,7 @@
 {% load static %} 
 
 {% block extra_css %}
-<link rel="stylesheet" href="{% static 'css/addticket.css' %}">
+<link rel="stylesheet" href="{% static 'css/pages/addticket.css' %}">
 <link rel="stylesheet" href="{% static 'css/allauth.css' %}">
 {% endblock%}
 
@@ -12,7 +12,7 @@
 <div class="overlay"></div>
 
 <h1>Add Tickets page</h1>
-<form method="POST" class="mt-1 mt-md-3 mr-auto ml-auto clearfix" enctype="multipart/form-data">
+<form method="POST" class="mt-1 mt-md-3 mr-auto ml-auto clearfix " enctype="multipart/form-data">
         {% csrf_token %}
         <div class="form-row">
             <div class="form-group col-xs-12 col-md-6">
