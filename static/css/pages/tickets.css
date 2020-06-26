@@ -1,0 +1,23 @@
+.search-and-filter {
+  border: 2px solid var(--primary-colour);
+  border-radius: 6px;
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-evenly;
+  color: var(--black-colour);
+  z-index: 2;
+}
+
+.search-and-filter form {
+  width: 15%;
+}
+
+.ticket {
+  border: 2px solid var(--tertiary-colour);
+  border-radius: 6px;
+  width: 100%;
+  padding: 2rem;
+  margin: 2rem;
+  z-index: 2;
+}

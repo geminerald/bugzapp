@@ -3,7 +3,7 @@
 {% load static %}
 
 {% block extra_css %}
-<link rel="stylesheet" href="{% static 'css/tickets.css' %}" />
+<link rel="stylesheet" href="{% static 'css/pages/tickets.css' %}" />
 {% endblock %}
 
 {% block content %}
@@ -14,20 +14,11 @@
 <hr />
 <div class="search-and-filter">
 	<form method="GET" action="">
-		<div class="input-group w-100">
-			<input
-        class="form-control"
-        type="text"
-        name="q"
-        placeholder="Search Tickets"
-      />
-			<div class="input-group-append">
-				<button
-          class="form-control btn border-black rounded-0"
-          type="submit"
-        ><span class="text-success">
-          Search</span>
-        </button>
+		<div class="input-group"><input class="form-control" type="text" name="q" placeholder="Search Tickets" />
+		    <div class="input-group-append">
+				<button class="form-control btn border-black rounded-0" type="submit">
+                    <span class="text-success">Search</span>
+                </button>
 			</div>
 		</div>
 	</form>
