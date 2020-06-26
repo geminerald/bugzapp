@@ -1,26 +1,19 @@
-
-form{
-    z-index: 5;
-    color: var(--black-colour);
-    min-height: 60vh;
-    width: 100%;
-    border: 2px solid var(--primary-colour);
-    box-shadow: 0 4px 8px 0 rgba(55, 0, 179, 0.8);
-    padding: 5rem;
-}
-label{
-    color: var(--white-colour);
-    margin: 4rem;
+.add-form {
+  z-index: 5;
+  color: var(--black-colour);
+  min-height: 60vh;
+  width: 100%;
+  border: 2px solid var(--primary-colour);
+  box-shadow: 0 4px 8px 0 rgba(55, 0, 179, 0.8);
+  padding: 5rem;
 }
 
-.butn{
-    height: 2rem;
-    width: 4rem;
-    background-color: var(--white-colour);
+label {
+  color: var(--white-colour);
+  margin: 4rem;
 }
 
-.description{
-    display: flex;
-    flex-flow: column wrap;
-
+.description {
+  display: flex;
+  flex-flow: column wrap;
 }
