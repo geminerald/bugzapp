@@ -5,6 +5,7 @@
 <div class="overlay"></div>
 
 <h1>Products page</h1>
+<div class="products">
 {% for product in products %}
 
 <div class="row product">
@@ -14,10 +15,10 @@
     {% csrf_token %}
     <div class="form-row">
       <div class="col-12">
-      {% if product.name == "Advanced" %}
-        <p class="mt-3"><strong>Quantity:</strong></p>
+        {% if product.name == "Advanced" %}
+            <p class="mt-3"><strong>Quantity:</strong></p>
         {% else %}
-        <h2>boop</h2>
+            <h2>boop</h2>
         {% endif %}
         <div class="form-group w-50">
           <div class="input-group">
@@ -57,5 +58,6 @@
 </div>
 
 {% endfor %}
+</div>
 <a href="{% url 'cart' %}">View Cart</a>
 {% endblock %}
