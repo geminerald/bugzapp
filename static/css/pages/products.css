@@ -3,8 +3,8 @@
     z-index: 2;
     padding: 3rem;
     width: 25rem;
-    margin: 4rem auto;
     border-radius: 6px;
+    margin: 5rem auto;
 }
 
 .products{
@@ -12,4 +12,5 @@
     width: 100%;
     display: flex;
     flex-flow: row wrap;
+    margin: 0rem 10rem 5rem 10rem;
 }

@@ -9,17 +9,16 @@
 {% for product in products %}
 
 <div class="row product">
-  {{ product.name}} {{ product.price}} {{ product.description }}
+  <h2>{{ product.name}} </h2>
+   <p> {{ product.description }}</p>
+   <p>{{ product.price}}</p>
 
   <form class="form" action="{% url 'add_to_cart' product.id %}" method="POST">
     {% csrf_token %}
     <div class="form-row">
       <div class="col-12">
-        {% if product.name == "Advanced" %}
+        {% if product.name == "Pro" %}
             <p class="mt-3"><strong>Quantity:</strong></p>
-        {% else %}
-            <h2>boop</h2>
-        {% endif %}
         <div class="form-group w-50">
           <div class="input-group">
             <input
@@ -34,6 +33,7 @@
             />
           </div>
         </div>
+        {% endif %}
       </div>
 
       <div class="col-12">
