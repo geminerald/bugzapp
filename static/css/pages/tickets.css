@@ -5,8 +5,15 @@
   padding: 2rem;
   display: flex;
   justify-content: space-evenly;
+  flex-flow: row wrap;
   color: var(--black-colour);
   z-index: 2;
+  font-size: 1.6rem;
+}
+
+select{
+    max-height: 4rem;
+    border-radius: 6px;
 }
 
 .search-and-filter form {
@@ -20,4 +27,19 @@
   padding: 2rem;
   margin: 2rem;
   z-index: 2;
+}
+
+.search-line{
+    margin-top: 1rem;
+    padding:0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+button{
+    margin: 0;
+    box-shadow: none;
+    
 }
