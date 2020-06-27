@@ -15,18 +15,18 @@
 <div class="search-and-filter">
 	<form method="GET" action="">
 		<div class="input-group search-line"><input class="form-control" type="text" name="q" placeholder="Search Tickets" />
-        <button class="form-control border-black rounded-0" type="submit">
-            <span class="text-success">Search</span>
-        </button>
-			
-		</div>
+            <button class="form-control border-black rounded-0" type="submit">
+                <span class="text-success">Search</span>
+            </button>
+        </div>
 	</form>
     <select name="status-select" id="status-select">
     <option value="opened" selected >Open</option>
     <option value="closed">Closed</option>
     </select>
-    <select name="type-select" id="type-select">
-    <option value="bug" selected >Bug Report</option>
+    <select name="type-select" id="type-select">    
+    <option value="empty" selected >Type</option>
+    <option value="bug" >Bug Report</option>
     <option value="feature">Feature Request</option>
     </select>
 </div>
