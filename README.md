@@ -173,7 +173,18 @@ To view the wireframes for this project please go to the [Wireframes Folder](htt
 
 User Model
 
+
 Bug Model
+
+| Name | DB Name | Validation | Type |
+| --- | --- | --- | --- |
+| Title | title | max_length=70 | CharField |
+| User | user | User, on_delete=models.CASCADE, null=True, blank=True | ForeignKey |
+| Description | description | None | TextField |
+| Type | type | max_length=7, choices=TYPE_CHOICES | CharField |
+| Status | status | max_length=20, choices=STATUS_CHOICES, default="opened" | CharField |
+| Creation Date | creation_date | auto_now_add=True | DateTimeField | 
+| Score | score | default=0 | IntegerField |
 
 Organisation Model
 
