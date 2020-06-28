@@ -269,4 +269,8 @@ Login page failed to load due to allauth social tag.
 Reverted formatting changes to previous version
 Resolved
 
+Admin Order Bug
+Tried removing full name and adding again and running migrations.
+Ongoing
+
 ## Credits
