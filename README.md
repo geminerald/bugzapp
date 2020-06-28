@@ -186,7 +186,22 @@ Bug Model
 | Creation Date | creation_date | auto_now_add=True | DateTimeField | 
 | Score | score | default=0 | IntegerField |
 
-Organisation Model
+Order Model
+
+| Name | DB Name | Validation | Type |
+| --- | --- | --- | --- |
+| Order Number | order_number | max_length=32, null=False, editable=False | CharField |
+| Full Name | full_name | max_length=50, null=False, blank=False | CharField |
+| Email Address | email | max_length=254, null=False, blank=False | EmailField |
+| Phone Number | phone_number | max_length=20, null=False, blank=False | CharField |
+| Street Address 1 | street_address1 | max_length=80, null=False, blank=False | CharField |
+| Street Address 2 | street_address2 | max_length=80, null=True, blank=True | CharField |
+| Town or City | town_or_city | max_length=40, null=False, blank=False | CharField |
+| County | county | max_length=50, null=False, blank=False | CharField |
+| Postcode | postcode | max_length=20, null=True, blank=True | CharField |
+| Order Date | date | auto_now_add=True | DateTimeField |
+| Order Total | order_total | max_digits=10, decimal_places=2, null=False, default=0 | DecimalField |
+
 
 ## Features
 
