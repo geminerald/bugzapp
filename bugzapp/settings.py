@@ -42,15 +42,24 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.sites',
+
+    # Django allauth
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
+
+    # custom apps
     'home',
     'tickets',
     'checkout',
     'products',
     'cart',
+
+    # Static and Media Storage
     'storages',
+
+    # Other
+    'crispy_forms',
 ]
 
 MIDDLEWARE = [
@@ -64,6 +73,8 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'bugzapp.urls'
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 TEMPLATES = [
     {
@@ -82,6 +93,10 @@ TEMPLATES = [
                 'django.contrib.messages.context_processors.messages',
                 'cart.contexts.cart_contents',
             ],
+            'builtins': [
+                'crispy_forms.templatetags.crispy_forms_tags',
+                'crispy_forms.templatetags.crispy_forms_field',
+            ]
         },
     },
 ]
