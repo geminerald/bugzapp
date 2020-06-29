@@ -256,6 +256,12 @@ Order Model
 
 ## Testing
 
+Automated testing was implemented on this project from an early stage using Travis.
+
+Travis ran automated testing on the code at each push and notified me via email of any issues.
+
+In this way many errors were caught before they became embedded in the code and/or difficult to find.
+
 ## Bugs
 
 Navbar was not fixed to top on scroll. 
