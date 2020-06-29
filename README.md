@@ -4,7 +4,9 @@
 
 An Online Bug tracker offering convenient ways to monitor and update statuses of bugs on your software. Fully customisable. 
 
-Offering a free version for individuals who want to use it on personal projects or for study or a competitively priced paid version for companies with a 2 week free trial offer.
+Offering a trial for projects operated by me where users can submit bugs or feature requests for websites or games created by me. 
+
+Alternatively users can buy the system for use on their own projects. The third optoin would be to select to purchase multiple copies of the system to use in a business setting.
 
 
 ## Contents:
@@ -222,6 +224,9 @@ Order Model
 
 - Organisation Model
 - Profile Page
+- Tags System
+- Upvoting System
+- Sort and Filter System
 
 ## Technologies
 
