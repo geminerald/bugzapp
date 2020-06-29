@@ -171,9 +171,6 @@ To view the wireframes for this project please go to the [Wireframes Folder](htt
 
 ### Models
 
-User Model
-
-
 Bug Model
 
 | Name | DB Name | Validation | Type |
