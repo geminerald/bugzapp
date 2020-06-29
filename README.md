@@ -268,6 +268,15 @@ Resolved
 
 Admin Order Bug
 Tried removing full name and adding again and running migrations.
-Ongoing
+Removed all migs and added again
+
+Products quantity bug
+When quantity was rmoved from basic models the site couldn't add, set hidden qty in formatting
+Resolved
 
 ## Credits
+
+Simen
+CI Tutors
+Stack Overflow
+Dev Ed 
