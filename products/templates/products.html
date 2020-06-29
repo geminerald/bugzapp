@@ -39,6 +39,8 @@
             />
           </div>
         </div>
+        {% else %}
+        <input type="hidden" value="1" name="quantity" id="id_qty_{{ product.id }}">
         {% endif %}
       </div>
 
