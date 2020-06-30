@@ -11,9 +11,9 @@
   font-size: 1.6rem;
 }
 
-select{
-    max-height: 4rem;
-    border-radius: 6px;
+select {
+  max-height: 4rem;
+  border-radius: 6px;
 }
 
 .search-and-filter form {
@@ -29,17 +29,16 @@ select{
   z-index: 2;
 }
 
-.search-line{
-    margin-top: 1rem;
-    padding:0;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
-    align-items: center;
+.search-line {
+  margin-top: 1rem;
+  padding: 0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
 }
 
-button{
-    margin: 0;
-    box-shadow: none;
-    
+button {
+  margin: 0;
+  box-shadow: none;
 }

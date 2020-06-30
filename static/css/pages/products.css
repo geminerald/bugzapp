@@ -1,19 +1,18 @@
-.product{
-    border: 10px solid var(--off-white-colour);
-    z-index: 2;
-    padding: 3rem;
-    width: 25rem;
-    border-radius: 6px;
-    margin: 5rem auto;
-    color: var(--off-white-colour);
+.product {
+  border: 10px solid var(--off-white-colour);
+  z-index: 2;
+  padding: 3rem;
+  width: 25rem;
+  border-radius: 6px;
+  margin: 5rem auto;
+  color: var(--off-white-colour);
 }
 
-.products{
-    z-index: 2;
-    width: 100%;
-    display: flex;
-    flex-flow: row wrap;
-    margin: 0rem 10rem 5rem 10rem;
-    color: var(--off-white-colour);
+.products {
+  z-index: 2;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0rem 10rem 5rem 10rem;
+  color: var(--off-white-colour);
 }
-
