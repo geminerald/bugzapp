@@ -304,7 +304,7 @@ In this way many errors were caught before they became embedded in the code and/
 
 Thanks to [Simen Daehlin](https://www.linkedin.com/in/simendaehlin?originalSubdomain=uk) - my mentor from Code Institute - for his feedback and constant belief and encouragement.
 
-Thanks also to the various [Code Institute](https://codeinstitute.net/) Tutors for their near endless patience and commitment.
+Thanks also to the [Code Institute](https://codeinstitute.net/) Tutors for their near endless patience and commitment.
 
 Thanks to the hundreds of nameless people on [Stack Overflow](https://stackoverflow.com/) who answered my questions posted to google.
 
