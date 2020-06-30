@@ -287,7 +287,7 @@ In this way many errors were caught before they became embedded in the code and/
 
 ## Credits
 
-Simen
-CI Tutors
-Stack Overflow
-Dev Ed 
+Thanks to [Simen Daehlin](https://www.linkedin.com/in/simendaehlin?originalSubdomain=uk) - my mentor from Code Institute - for his feedback and constant belief and encouragement.
+Thanks also to the various [Code Institute](https://codeinstitute.net/) Tutors for their near endless patience and commitment.
+Thanks to the hundreds of nameless people on [Stack Overflow](https://stackoverflow.com/) who answered my questions posted to google.
+The Navbar elements were heavinly inspired by the [Dev Ed](https://github.com/developedbyed) [YouTube](https://www.youtube.com/channel/UClb90NQQcskPUGDIXsQEz5Q) channel. 
