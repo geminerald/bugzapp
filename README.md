@@ -269,25 +269,42 @@ In this way many errors were caught before they became embedded in the code and/
 
 ## Bugs
 
+****
+
 **Issue:** Navbar was not fixed to top on scroll. 
+
 **Actions Taken:** Added position fixed to nav andd top 0
+
 **Status:** Resolved
 
+****
 **Issue:** Login page failed to load due to allauth social tag.
+
 **Actions Taken:** Reverted formatting changes to previous version
+
 **Status:** Resolved
 
+****
 **Issue:** Admin Order Bug
+
 **Actions Taken:** Tried removing full name and adding again and running migrations.
+
 **Status:** Removed all migs and added again
 
+****
 **Issue:** Products quantity bug
+
 **Actions Taken:** When quantity was rmoved from basic models the site couldn't add, set hidden qty in formatting
+
 **Status:** Resolved
+****
 
 ## Credits
 
 Thanks to [Simen Daehlin](https://www.linkedin.com/in/simendaehlin?originalSubdomain=uk) - my mentor from Code Institute - for his feedback and constant belief and encouragement.
+
 Thanks also to the various [Code Institute](https://codeinstitute.net/) Tutors for their near endless patience and commitment.
+
 Thanks to the hundreds of nameless people on [Stack Overflow](https://stackoverflow.com/) who answered my questions posted to google.
+
 The Navbar elements were heavinly inspired by the [Dev Ed](https://github.com/developedbyed) [YouTube](https://www.youtube.com/channel/UClb90NQQcskPUGDIXsQEz5Q) channel. 
