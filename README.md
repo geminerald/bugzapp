@@ -261,7 +261,7 @@ Order Model
 
 ## Testing
 
-Automated testing was implemented on this project from an early stage using Travis.
+**Automated testing** was implemented on this project from an early stage using **Travis**.
 
 Travis ran automated testing on the code at each push and notified me via email of any issues.
 
@@ -269,21 +269,21 @@ In this way many errors were caught before they became embedded in the code and/
 
 ## Bugs
 
-Navbar was not fixed to top on scroll. 
-Added position fixed to nav andd top 0
-Resolved
+**Issue:** Navbar was not fixed to top on scroll. 
+**Actions Taken:** Added position fixed to nav andd top 0
+**Status:** Resolved
 
-Login page failed to load due to allauth social tag.
-Reverted formatting changes to previous version
-Resolved
+**Issue:** Login page failed to load due to allauth social tag.
+**Actions Taken:** Reverted formatting changes to previous version
+**Status:** Resolved
 
-Admin Order Bug
-Tried removing full name and adding again and running migrations.
-Removed all migs and added again
+**Issue:** Admin Order Bug
+**Actions Taken:** Tried removing full name and adding again and running migrations.
+**Status:** Removed all migs and added again
 
-Products quantity bug
-When quantity was rmoved from basic models the site couldn't add, set hidden qty in formatting
-Resolved
+**Issue:** Products quantity bug
+**Actions Taken:** When quantity was rmoved from basic models the site couldn't add, set hidden qty in formatting
+**Status:** Resolved
 
 ## Credits
 
