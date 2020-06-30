@@ -208,13 +208,13 @@ Order Model
 
 - Home Page
 - Authentication System
+- Checkout System
 
 ### Features in Development
 
 - Ticket Model
 - About Page
 - User Model
-- Checkout System
 - Cart Page
 - Cart System
 - Checkout & Payment Page
@@ -227,6 +227,7 @@ Order Model
 - Tags System
 - Upvoting System
 - Sort and Filter System
+- Search Bugs System
 
 ## Technologies
 
