@@ -54,6 +54,11 @@ footer .container {
   align-items: center;
   justify-content: space-between;
   padding: 2rem;
+  flex-flow: row wrap;
+}
+
+.mobile-container{
+    font-size: 9px;
 }
 
 /* Main container across all pages */
