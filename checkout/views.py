@@ -1,10 +1,10 @@
-from django.shortcuts import render, reverse, redirect
+from django.shortcuts import render, reverse, redirect, get_object_or_404
 from django.contrib import messages
 from .forms import OrderForm
 from cart.contexts import cart_contents
 from django.conf import settings
 
-from .models import OrderLine
+from .models import OrderLine, Order
 from products.models import Product
 
 import stripe
@@ -33,8 +33,7 @@ def checkout(request):
                     product = Product.objects.get(id=item_id)
                     orderline = OrderLine(
                         order=order,
-                        product=product,
-                        quantity=quantity
+                        product=product
                     )
                     orderline.save()
                 except Product.DoesNotExist:
@@ -75,3 +74,23 @@ def checkout(request):
         }
 
         return render(request, template, context)
+
+
+def checkout_success(request, order_number):
+    """
+    Handle and show info on successful checkouts
+    """
+    save_info = request.session.get('save_info')
+    order = get_object_or_404(Order, order_number=order_number)
+    messages.success(request, f'Order successfuly placed \
+        Your Order number is {order_number}. A confirmation \
+            email will be sent to {order.email}')
+    if 'cart' in request.session:
+        del request.session['cart']
+
+    template = 'checkout_success.html'
+    context = {
+        'order': order,
+    }
+
+    return render(request, template, context)
