@@ -52,13 +52,14 @@ footer .container {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   padding: 2rem;
   flex-flow: row wrap;
 }
 
-.mobile-container{
-    font-size: 9px;
+.mobile-container p{
+    margin-top: 2rem;
+    text-align: center;
 }
 
 /* Main container across all pages */
