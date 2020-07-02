@@ -2,6 +2,9 @@ from django.shortcuts import render, reverse, redirect
 from django.contrib import messages
 from .forms import OrderForm
 from cart.contexts import cart_contents
+from django.conf import settings
+
+import stripe
 
 # Create your views here.
 
