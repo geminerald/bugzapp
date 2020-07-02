@@ -48,4 +48,3 @@ class OrderLine(models.Model):
 
     def __str__(self):
         return f'product {self.product.name} on order {self.order.order_number}'
-
