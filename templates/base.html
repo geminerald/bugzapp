@@ -2,35 +2,36 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-     {% block core_meta %}
+	{% block core_meta %}
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-    {% endblock %}
+	{% endblock %}
 
-    {% block extra_meta %}
-    {% endblock %}
+	{% block extra_meta %}
+	{% endblock %}
 
 	<title>BugzApp {% block head_title %}{% endblock %}</title>
 
 	{% block core_css %}
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 	<link rel="stylesheet" href="{% static 'css/base.css' %}">
 	<link rel="stylesheet" href="{% static 'css/nav.css' %}">
-    {% endblock %}
+	{% endblock %}
 
-    <link rel="icon" href="{% static 'images/bug-zap-icon.png' %}">
-    
-    {% block extra_css %}
-    {% endblock %}
+	<link rel="icon" href="{% static 'images/bug-zap-icon.png' %}">
+
+	{% block extra_css %}
+	{% endblock %}
 
 </head>
 
 <body>
 	<!-- Fixed masthead -->
-	
-{% include 'components/nav.html' %}
+
+	{% include 'components/nav.html' %}
 
 	<div class="container base-main">
 		{% if messages %}
@@ -43,20 +44,27 @@
 		</div>
 		{% endif %}
 
-        {% block page_header%}
-<div class="container main-container">
+		{% block page_header%}
 		{% endblock %}
-		{% block content %}
-</div>
-		{% endblock %}
+		<div class="container main-container">
+
+			{% block content %}
+
+			{% endblock %}
+		</div>
 	</div>
+
 	{% include 'components/footer.html' %}
 </body>
 
 {% block core_js %}
 <script src="{% static 'js/jquery-3.5.1.min.js' %}"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+	integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+</script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+	integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+</script>
 <script src="{% static 'js/nav.js' %}"></script>
 <!--Stripe-->
 <script src="https://js.stripe.com/v3/"></script>
@@ -64,4 +72,5 @@
 
 {% block postloadjs %}
 {% endblock %}
+
 </html>
