@@ -18,34 +18,37 @@
       <hr />
       <h2 class="logo-font">Checkout</h2>
       <hr />
+      
+      <p>Please fill in the below form to complete your order.</p>
     </div>
   </div>
-  <div class="row">
-    <div class="col">
-      <p>Please fill in the below form to complete your order.</p>
+  
+      
       <div class="form-container container">
         <form action="{% url 'checkout' %}" method="POST" id="payment_form">
-          {% csrf_token %}
-          <div class="row">
-            <fieldset class="rounded px-3 mb-5">
-              <legend class="fieldset-label small px-2 w-auto">
-                Your Details
-              </legend>
-              <div class="col">
-                {{ order_form.full_name | as_crispy_field }} 
-                
+            {% csrf_token %}
+            <div class="row">
+              <fieldset class="rounded px-3 mb-5">
+            <legend class="fieldset-label small px-2 w-auto">Your Details </legend>
+            
+            <div class="col">
+                {{ order_form.full_name | as_crispy_field }}
                 {{ order_form.email | as_crispy_field }} 
                 {{ order_form.phone_number | as_crispy_field }}
               </div>
+              </fieldset>
+              <fieldset class="rounded px-3 mb-5">
+            <legend class="fieldset-label small px-2 w-auto">Billing Details </legend>
+            
               <div class="col">
                 {{ order_form.street_address1 | as_crispy_field }} 
                 {{ order_form.street_address2 | as_crispy_field }} 
+                {{ order_form.town_or_city | as_crispy_field }}
                 {{ order_form.county | as_crispy_field }} 
                 {{ order_form.postcode | as_crispy_field }}
               </div>
             </fieldset>
-          </div>
-          <fieldset class="rounded px-3 mb-5">
+            <fieldset class="rounded px-3 mb-5">
             <legend class="fieldset-label small px-2 w-auto">
               Order Details
             </legend>
@@ -60,6 +63,8 @@
               {% endfor %}
             </div>
           </fieldset>
+          </div>
+          
           <fieldset class="px-3">
             <legend class="fieldset-label small px-2 w-auto">Payment</legend>
             <div class="mb-3" id="card-element"></div>
@@ -67,15 +72,13 @@
           </fieldset>
           <div class="button">
             <a href="{% url 'products' %}">Back to Shop</a>
+          </div>
             <button id="submit-button" class="button">Buy Now</button>
             <p class="small text-danger my-0">
               Your card will be charged €{{ total | floatformat:2 }}
             </p>
-          </div>
         </form>
       </div>
-    </div>
-  </div>
 </div>
 
 {% endblock %} 

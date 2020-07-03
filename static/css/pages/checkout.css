@@ -1,0 +1,16 @@
+fieldset{
+    margin: 2rem;
+    border: 1px solid var(--success-colour);
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.row .col{
+    min-height: 10rem;
+    padding: 2rem;
+    border: 2px solid var(--white-colour);
+}
