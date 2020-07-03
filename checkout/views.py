@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.conf import settings
-
+from allauth.account.decorators import verified_email_required
 from .forms import OrderForm
 from .models import Order, OrderLine
 from products.models import Product
@@ -11,6 +11,7 @@ import stripe
 # Create your views here.
 
 
+@verified_email_required
 def checkout(request):
     stripe_public_key = settings.STRIPE_PUBLIC_KEY
     stripe_secret_key = settings.STRIPE_SECRET_KEY
@@ -80,6 +81,7 @@ def checkout(request):
         return render(request, template, context)
 
 
+@verified_email_required
 def checkout_success(request, order_number):
     """
     Handle and show info on successful checkouts
