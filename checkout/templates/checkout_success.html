@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block extra_css %}
+
+<link rel="stylesheet" href="{% static 'css/pages/checkout.css' %}" />
+
+{% endblock %}
+
+{% block content %}
+
+<div class="overlay"></div>
+
+<div class="container cart-container">
+	<div class="row">
+		<div class="col">
+			<hr />
+			<h2 class="logo-font">Thank You!</h2>
+			<hr />
+            <p>Your Order number is detailed below, this is also being emailed to your email address {{ order.email }}.</p>
+		</div>
+	</div>
+	<div class="col">
+        
+    </div>
+</div>
+
+{% endblock %}

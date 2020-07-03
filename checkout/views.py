@@ -1,12 +1,11 @@
-from django.shortcuts import render, reverse, redirect, get_object_or_404
+from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
-from .forms import OrderForm
-from cart.contexts import cart_contents
 from django.conf import settings
 
-from .models import OrderLine, Order
+from .forms import OrderForm
+from .models import Order, OrderLine
 from products.models import Product
-
+from cart.contexts import cart_contents
 import stripe
 
 # Create your views here.
@@ -16,7 +15,7 @@ def checkout(request):
     stripe_public_key = settings.STRIPE_PUBLIC_KEY
     stripe_secret_key = settings.STRIPE_SECRET_KEY
 
-    if request.methodv == 'POST':
+    if request.method == 'POST':
         cart = request.session.get('cart', {})
 
         form_data = {
@@ -42,6 +41,7 @@ def checkout(request):
                     ))
                     order.delete()
                     return redirect(reverse('view_cart'))
+            request.session['save_info'] = 'save-info' in request.POST
             return redirect(reverse('checkout_success', args=[order.order_number]))
         else:
             messages.error(request, 'There was an error in your form')
@@ -85,6 +85,7 @@ def checkout_success(request, order_number):
     messages.success(request, f'Order successfuly placed \
         Your Order number is {order_number}. A confirmation \
             email will be sent to {order.email}')
+
     if 'cart' in request.session:
         del request.session['cart']
 
