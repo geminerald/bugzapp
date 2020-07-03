@@ -14,3 +14,17 @@ fieldset{
     padding: 2rem;
     border: 2px solid var(--white-colour);
 }
+
+.checkout-success h2, p{
+    text-align: center;
+    margin: 2rem;
+}
+
+.success-container{
+    margin-top: 0;
+}
+
+.checkout-success p a{
+    text-decoration: none;
+    color: var(--success-colour);
+}

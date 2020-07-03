@@ -12,13 +12,14 @@
 
 <div class="overlay"></div>
 
-<div class="container cart-container">
+<div class="container success-container">
 	<div class="row">
-		<div class="col">
+		<div class="col checkout-success">
 			<hr />
 			<h2 class="logo-font">Thank You!</h2>
 			<hr />
-            <p>Your Order number is detailed below, this is also being emailed to your email address {{ order.email }}.</p>
+            <p>Your Order number is: <br><br> {{ order.order_number }} <br><br> This is also being emailed to your email address {{ order.email }}.</p>
+            <p>Click <a href="#">here</a> to download your software. Don't worry, this link to download will also be available from the confirmation email.</p>
 		</div>
 	</div>
 	<div class="col">
