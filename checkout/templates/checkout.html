@@ -13,72 +13,63 @@
 <div class="overlay"></div>
 
 <div class="container cart-container">
-  <div class="row">
-    <div class="col">
-      <hr />
-      <h2 class="logo-font">Checkout</h2>
-      <hr />
-      
-      <p>Please fill in the below form to complete your order.</p>
+    <div class="row">
+        <div class="col">
+            <hr />
+            <h2 class="logo-font">Checkout</h2>
+            <hr />
+            <p>Please fill in the below form to complete your order.</p>
+        </div>
     </div>
-  </div>
-  
-      
-      <div class="form-container container">
+    <div class="form-container container">
         <form action="{% url 'checkout' %}" method="POST" id="payment_form">
             {% csrf_token %}
             <div class="row">
-              <fieldset class="rounded px-3 mb-5">
-            <legend class="fieldset-label small px-2 w-auto">Your Details </legend>
+                <fieldset class="rounded px-3 mb-5">
+                    <legend class="fieldset-label small px-2 w-auto">Your Details </legend>
             
-            <div class="col">
-                {{ order_form.full_name | as_crispy_field }}
-                {{ order_form.email | as_crispy_field }} 
-                {{ order_form.phone_number | as_crispy_field }}
-              </div>
-              </fieldset>
-              <fieldset class="rounded px-3 mb-5">
-            <legend class="fieldset-label small px-2 w-auto">Billing Details </legend>
-            
-              <div class="col">
-                {{ order_form.street_address1 | as_crispy_field }} 
-                {{ order_form.street_address2 | as_crispy_field }} 
-                {{ order_form.town_or_city | as_crispy_field }}
-                {{ order_form.county | as_crispy_field }} 
-                {{ order_form.postcode | as_crispy_field }}
-              </div>
-            </fieldset>
-            <fieldset class="rounded px-3 mb-5">
-            <legend class="fieldset-label small px-2 w-auto">
-              Order Details
-            </legend>
-            <div class="container">
-              {% for item in cart_items %}
-              <div class="row">
-                <div class="col">
-                  {{ item.product.name}}
-                </div>
-                <div class="col">{{ item.product.price }}</div>
-              </div>
-              {% endfor %}
+                    <div class="col">
+                        {{ order_form.full_name | as_crispy_field }}
+                        {{ order_form.email | as_crispy_field }} 
+                        {{ order_form.phone_number | as_crispy_field }}
+                    </div>
+                </fieldset>
+                <fieldset class="rounded px-3 mb-5">
+                    <legend class="fieldset-label small px-2 w-auto">Billing Details </legend>
+                    <div class="col">
+                        {{ order_form.street_address1 | as_crispy_field }} 
+                        {{ order_form.street_address2 | as_crispy_field }} 
+                        {{ order_form.town_or_city | as_crispy_field }}
+                        {{ order_form.county | as_crispy_field }} 
+                        {{ order_form.postcode | as_crispy_field }}
+                    </div>
+                </fieldset>
+                <fieldset class="rounded px-3 mb-5">
+                    <legend class="fieldset-label small px-2 w-auto">Product Details</legend>
+                    {% for item in cart_items %}
+                        <div class="col product-class">
+                            <h3>{{ item.product.name}} Version </h3>
+                            <p>{{ item.product.description }}</p>
+                            <p>Price: {{ item.product.price }}</p>
+                        </div>
+                    {% endfor %}
+                </fieldset>
             </div>
-          </fieldset>
-          </div>
           
-          <fieldset class="px-3">
-            <legend class="fieldset-label small px-2 w-auto">Payment</legend>
-            <div class="mb-3" id="card-element"></div>
-            <div class="mb-3" id="card-errors"></div>
-          </fieldset>
-          <div class="button">
-            <a href="{% url 'products' %}">Back to Shop</a>
-          </div>
+            <fieldset class="px-3">
+                <legend class="fieldset-label small px-2 w-auto">Payment Card</legend>
+                <div class="mb-3" id="card-element"></div>
+                <div class="mb-3" id="card-errors"></div>
+            </fieldset>
+            <div class="button">
+                <a href="{% url 'products' %}">Back to Shop</a>
+            </div>
             <button id="submit-button" class="button">Buy Now</button>
             <p class="small text-danger my-0">
               Your card will be charged €{{ total | floatformat:2 }}
             </p>
         </form>
-      </div>
+    </div>
 </div>
 
 {% endblock %} 

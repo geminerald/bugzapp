@@ -8,8 +8,6 @@ from products.models import Product
 from cart.contexts import cart_contents
 import stripe
 
-# Create your views here.
-
 
 @verified_email_required
 def checkout(request):

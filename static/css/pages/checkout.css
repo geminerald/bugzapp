@@ -13,6 +13,7 @@ fieldset{
     min-height: 10rem;
     padding: 2rem;
     border: 2px solid var(--white-colour);
+    border-radius: 6px;
 }
 
 .checkout-success h2, p{
@@ -27,4 +28,12 @@ fieldset{
 .checkout-success p a{
     text-decoration: none;
     color: var(--success-colour);
+}
+
+.logo-font{
+    text-align: center;
+}
+
+h3{
+    text-align: center;
 }
