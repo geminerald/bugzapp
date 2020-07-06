@@ -38,17 +38,17 @@
             <div class="row info-row">
                 <fieldset class="rounded px-3 mb-5">
                     <legend class="fieldset-label small px-2 w-auto">Your Details </legend>
-                    <div class="col">
+                    <div class="col form-column">
                         {{ order_form.full_name | as_crispy_field }}
                         {{ order_form.email | as_crispy_field }} 
                         {{ order_form.phone_number | as_crispy_field }}
-                    </div>
                     <div class="mb-3" id="card-element"></div>
                     <div class="mb-3" id="card-errors"></div>
+                    </div>
                 </fieldset>
                 <fieldset class="rounded px-3 mb-5">
                     <legend class="fieldset-label small px-2 w-auto">Billing Details </legend>
-                    <div class="col">
+                    <div class="col form-column">
                         {{ order_form.street_address1 | as_crispy_field }} 
                         {{ order_form.street_address2 | as_crispy_field }} 
                         {{ order_form.town_or_city | as_crispy_field }}
@@ -56,11 +56,8 @@
                         {{ order_form.postcode | as_crispy_field }}
                     </div>
                 </fieldset>
-                
             </div>
-          
-            
-                <a href="{% url 'products' %}"  class="button">Back to Shop</a>
+            <a href="{% url 'products' %}"  class="button">Back to Shop</a>
             <button id="submit-button" class="button">Buy Now</button>
             <p class="small text-danger my-0">
               Your card will be charged €{{ total | floatformat:2 }}

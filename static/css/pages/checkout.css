@@ -10,13 +10,24 @@ fieldset {
   justify-content: space-evenly;
 }
 
-.row .col {
-  min-height: 10rem;
-  padding: 2rem;
+.product-row{
+    width: 100%;
+}
+.product-row fieldset {
+  width: 80%;
 }
 
+.product-class {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+
+
 .checkout-success h2,
-p {
+p, h3 {
   text-align: center;
   margin: 2rem;
 }
@@ -34,9 +45,6 @@ p {
   text-align: center;
 }
 
-h3 {
-  text-align: center;
-}
 
 .button {
   padding: 1rem;
@@ -47,4 +55,33 @@ h3 {
   text-decoration: none;
   color: var(--primary-colour);
   background-color: var(--off-white-colour);
+}
+
+
+.info-row{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    height: 35vh;
+
+}
+
+.info-row fieldset{
+    height: 100%;
+    width: 30rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.form-column{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.form-column div{
+    width: 100%;
 }
