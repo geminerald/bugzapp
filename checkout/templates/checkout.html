@@ -24,15 +24,27 @@
     <div class="form-container container">
         <form action="{% url 'checkout' %}" method="POST" id="payment_form">
             {% csrf_token %}
-            <div class="row">
+            <div class="row product-row">
+                <fieldset class="rounded px-3 mb-5">
+                    <legend class="fieldset-label small px-2 w-auto">Product Details</legend>
+                    {% for item in cart_items %}
+                        <div class="col product-class">
+                            <h3>{{ item.product.name}} Version </h3>
+                            <p>Price: {{ item.product.price }}</p>
+                        </div>
+                    {% endfor %}
+                </fieldset>
+            </div>
+            <div class="row info-row">
                 <fieldset class="rounded px-3 mb-5">
                     <legend class="fieldset-label small px-2 w-auto">Your Details </legend>
-            
                     <div class="col">
                         {{ order_form.full_name | as_crispy_field }}
                         {{ order_form.email | as_crispy_field }} 
                         {{ order_form.phone_number | as_crispy_field }}
                     </div>
+                    <div class="mb-3" id="card-element"></div>
+                    <div class="mb-3" id="card-errors"></div>
                 </fieldset>
                 <fieldset class="rounded px-3 mb-5">
                     <legend class="fieldset-label small px-2 w-auto">Billing Details </legend>
@@ -44,22 +56,10 @@
                         {{ order_form.postcode | as_crispy_field }}
                     </div>
                 </fieldset>
-                <fieldset class="rounded px-3 mb-5">
-                    <legend class="fieldset-label small px-2 w-auto">Product Details</legend>
-                    {% for item in cart_items %}
-                        <div class="col product-class">
-                            <h3>{{ item.product.name}} Version </h3>
-                            <p>Price: {{ item.product.price }}</p>
-                        </div>
-                    {% endfor %}
-                </fieldset>
+                
             </div>
           
-            <fieldset class="px-3">
-                <legend class="fieldset-label small px-2 w-auto">Payment Card</legend>
-                <div class="mb-3" id="card-element"></div>
-                <div class="mb-3" id="card-errors"></div>
-            </fieldset>
+            
                 <a href="{% url 'products' %}"  class="button">Back to Shop</a>
             <button id="submit-button" class="button">Buy Now</button>
             <p class="small text-danger my-0">
