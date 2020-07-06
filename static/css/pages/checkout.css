@@ -24,7 +24,9 @@ fieldset {
   align-items: center;
 }
 
-
+.buttons{
+    position: static;
+}
 
 .checkout-success h2,
 p, h3 {
@@ -83,5 +85,13 @@ p, h3 {
 }
 
 .form-column div{
+    width: 100%;
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 4rem auto;
     width: 100%;
 }

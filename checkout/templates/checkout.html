@@ -14,7 +14,7 @@
 
 <div class="container cart-container">
     <div class="row">
-        <div class="col">
+        <div class="col"> 
             <hr />
             <h2 class="logo-font">Checkout</h2>
             <hr />
@@ -57,11 +57,13 @@
                     </div>
                 </fieldset>
             </div>
-            <a href="{% url 'products' %}"  class="button">Back to Shop</a>
-            <button id="submit-button" class="button">Buy Now</button>
-            <p class="small text-danger my-0">
-              Your card will be charged €{{ total | floatformat:2 }}
-            </p>
+            <div class="row buttons">
+                <a href="{% url 'products' %}"  class="button">Back to Shop</a>
+                <button id="submit-button" class="button">Buy Now</button>
+                <p class="small text-danger my-0">
+                    Your card will be charged €{{ total | floatformat:2 }}
+                </p>
+            </div>
         </form>
     </div>
 </div>
