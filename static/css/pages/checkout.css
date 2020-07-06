@@ -10,8 +10,8 @@ fieldset {
   justify-content: space-evenly;
 }
 
-.product-row{
-    width: 100%;
+.product-row {
+  width: 100%;
 }
 .product-row fieldset {
   width: 80%;
@@ -24,12 +24,13 @@ fieldset {
   align-items: center;
 }
 
-.buttons{
-    position: static;
+.buttons {
+  position: static;
 }
 
 .checkout-success h2,
-p, h3 {
+p,
+h3 {
   text-align: center;
   margin: 2rem;
 }
@@ -47,7 +48,6 @@ p, h3 {
   text-align: center;
 }
 
-
 .button {
   padding: 1rem;
   border-radius: 6px;
@@ -59,39 +59,44 @@ p, h3 {
   background-color: var(--off-white-colour);
 }
 
+.info-row {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  min-height: 35vh;
+}
 
-.info-row{
+.info-row fieldset {
+  padding: 3rem;
+  height: 100%;
+  width: 30rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.form-column {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.form-column div {
+  width: 100%;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 4rem auto;
+  width: 30%;
+}
+
+@media screen and (max-width: 1068px) {
+  .buttons {
     width: 100%;
-    display: flex;
-    flex-flow: row wrap;
-    height: 35vh;
-
-}
-
-.info-row fieldset{
-    height: 100%;
-    width: 30rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-.form-column{
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-.form-column div{
-    width: 100%;
-}
-
-.buttons{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin: 4rem auto;
-    width: 100%;
+  }
 }
