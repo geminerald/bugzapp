@@ -35,7 +35,8 @@ def checkout(request):
                     product = Product.objects.get(id=item_id)
                     orderline = OrderLine(
                         order=order,
-                        product=product
+                        product=product,
+                        quantity=item_data,
                     )
                     orderline.save()
                 except Product.DoesNotExist:
@@ -56,6 +57,7 @@ def checkout(request):
 
         current_cart = cart_contents(request)
         total = current_cart['total']
+        print(total)
         stripe_total = round(total * 100)
         stripe.api_key = stripe_secret_key
         intent = stripe.PaymentIntent.create(

@@ -1,7 +1,6 @@
 import uuid
 from django.db import models
 from django.db.models import Sum
-from django.conf import settings
 from products.models import Product
 
 # Create your models here.
@@ -25,8 +24,7 @@ class Order(models.Model):
         return uuid.uuid4().hex.upper()
 
     def update_total(self):
-        self.order_total = self.lineitems.aggregate(
-            Sum('line_total'))['line_total__sum'] or 0
+        self.order_total = self.lineitems.aggregate(Sum('line_total'))['line_total__sum'] or 0
         self.save()
 
     def save(self, *args, **kwargs):
