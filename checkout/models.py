@@ -18,13 +18,15 @@ class Order(models.Model):
     street_address2 = models.CharField(max_length=80, null=True, blank=True)
     county = models.CharField(max_length=50, null=False, blank=False)
     date = models.DateTimeField(auto_now_add=True)
-    order_total = models.DecimalField(max_digits=10, decimal_places=2, null=False, default=0)
+    order_total = models.DecimalField(
+        max_digits=10, decimal_places=2, null=False, default=0)
 
     def _generate_order_number(self):
         return uuid.uuid4().hex.upper()
 
     def update_total(self):
-        self.order_total = self.lineitems.aggregate(Sum('line_total'))['line_total__sum'] or 0
+        self.order_total = self.lineitems.aggregate(
+            Sum('line_total'))['line_total__sum'] or 0
         self.save()
 
     def save(self, *args, **kwargs):
@@ -37,10 +39,13 @@ class Order(models.Model):
 
 
 class OrderLine(models.Model):
-    order = models.ForeignKey(Order, null=False, blank=False, on_delete=models.CASCADE, related_name='lineitems')
-    product = models.ForeignKey(Product, null=False, blank=False, on_delete=models.CASCADE)
+    order = models.ForeignKey(Order, null=False, blank=False,
+                              on_delete=models.CASCADE, related_name='lineitems')
+    product = models.ForeignKey(
+        Product, null=False, blank=False, on_delete=models.CASCADE)
     quantity = models.IntegerField(null=False, blank=False, default=0)
-    line_total = models.DecimalField(max_digits=6, decimal_places=2, null=False, blank=False)
+    line_total = models.DecimalField(
+        max_digits=6, decimal_places=2, null=False, blank=False)
 
     def save(self, *args, **kwargs):
         self.line_total = self.product.price * self.quantity
