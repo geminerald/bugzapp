@@ -262,13 +262,17 @@ Order Model
 
 ## Testing
 
-**Automated testing** was implemented on this project from an early stage using **Travis**.
+**Automated testing** was implemented on this project from an early stage using **Travis**. Travis allows the results of their testing to be shown in realtime in this readme file - it is available near the top of this readme and also here: 
+
+[![Build Status](https://travis-ci.org/geminerald/bugzapp.svg?branch=master)](https://travis-ci.org/geminerald/bugzapp)
 
 Travis ran automated testing on the code at each push and notified me via email of any issues.
 
-In this way many errors were caught before they became embedded in the code and/or difficult to find.
+In this way many errors were caught before they became embedded in the code and/or difficult to find. This also allowed errors to be more easily identified due to the frequency of the Travis tests and the log of the tests run by Travis. 
 
 **Manual Testing**
+
+Manual testing was undertaken throughout development to ensure that all features were functioning and also that new features were not interfering with previously implemented ones. The following is an example of manual testing undertaken by the devleoper throughout development.
 
 
 
