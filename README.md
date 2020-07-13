@@ -209,16 +209,16 @@ Order Model
 - Home Page
 - Authentication System
 - Checkout System
+- Cart System
+- Cart Page
+- Payment System
+- Checkout & Payment Page
+- User Model
 
 ### Features in Development
 
 - Ticket Model
 - About Page
-- User Model
-- Cart Page
-- Cart System
-- Checkout & Payment Page
-- Payment System
 
 ### Features to be Developed
 
@@ -233,11 +233,11 @@ Order Model
 
 ### Core Technologies:
 
-- HTML
-- CSS
-- JavaScript
-- Python
-- Git
+- HTML 5 ![HTML5 Logo](https://www.w3.org/html/logo/downloads/HTML5_Logo_32.png "HTML5 Logo")
+- CSS ![CSS3 Logo](https://www.w3.org/css/logo/downloads/css3_Logo_32.png "CSS3 Logo")
+- JavaScript ![JavaScript Logo](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "IE6 Logo")
+- Python ![Python Logo](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Python Logo")
+- Git ![Git Logo](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Git Logo")
 
 ### Libraries/ Frameworks:
 
