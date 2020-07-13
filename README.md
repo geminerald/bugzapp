@@ -233,11 +233,11 @@ Order Model
 
 ### Core Technologies:
 
-- HTML 5 ![HTML5 Logo](https://www.w3.org/html/logo/downloads/HTML5_Logo_32.png "HTML5 Logo")
-- CSS ![CSS3 Logo](https://www.w3.org/css/logo/downloads/css3_Logo_32.png "CSS3 Logo")
-- JavaScript ![JavaScript Logo](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "IE6 Logo")
-- Python ![Python Logo](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Python Logo")
-- Git ![Git Logo](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Git Logo")
+- HTML 5 
+- CSS 
+- JavaScript 
+- Python 
+- Git 
 
 ### Libraries/ Frameworks:
 
@@ -270,9 +270,17 @@ In this way many errors were caught before they became embedded in the code and/
 
 **Manual Testing**
 
+
+
 **User Testing**
 
+**Code Validation**
 
+Close attention was paid to formatting throughout this project. Formatting is vital when writing code as it allows other people (or the original writer at a later date) to quickly understand what the code is trying to achilve and be able to make alterations as needed. 
+
+[Multiple articles](https://www.google.com/search?q=time+spent+reading+vs+writing+code&rlz=1C1CHBF_enIE796IE796&oq=time+spent+reading+c&aqs=chrome.1.69i57j0l2.5215j0j7&sourceid=chrome&ie=UTF-8) document that the time spent reading code is much higher than the time spent writing code and as such anything that can be done to improve this process, even to a small degree, is well worth doing. [One such article](https://www.informit.com/articles/article.aspx?p=1235624&seqNum=5#:~:text=Indeed%2C%20the%20ratio%20of%20time,is%20well%20over%2010%3A1.&text=Of%20course%20there's%20no%20way,makes%20it%20easier%20to%20write.) gives the approximate ratio of reading vs writing at over 10: 1.
+
+It is also important to do this on an ongoing basis and not trying to refactor code to accommodate this at a later date since this essentially ensures that it will not be effective and is also not best practice for when working with others.
 
 ## Bugs
 
