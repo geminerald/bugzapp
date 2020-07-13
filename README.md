@@ -282,6 +282,8 @@ Close attention was paid to formatting throughout this project. Formatting is vi
 
 It is also important to do this on an ongoing basis and not trying to refactor code to accommodate this at a later date since this essentially ensures that it will not be effective and is also not best practice for when working with others.
 
+[GitPod](https://www.gitpod.io/) was the primary IDE used in the developement of this project and comes with a built in feature that allows errors and best practice opportunities to be shown in real time by means of underlining. This allowed me to keep the code clean and legible on an ongoing basis and be confident that I would be able to read and understand what I had written down at any point provided I ensured to address all the highlighted issues before comitting code. 
+
 ## Bugs
 
 ****
