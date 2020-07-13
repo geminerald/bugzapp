@@ -268,6 +268,12 @@ Travis ran automated testing on the code at each push and notified me via email 
 
 In this way many errors were caught before they became embedded in the code and/or difficult to find.
 
+**Manual Testing**
+
+**User Testing**
+
+
+
 ## Bugs
 
 ****
