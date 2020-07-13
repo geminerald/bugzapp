@@ -8,6 +8,7 @@ Offering a trial for projects operated by me where users can submit bugs or feat
 
 Alternatively users can buy the system for use on their own projects. The third optoin would be to select to purchase multiple copies of the system to use in a business setting.
 
+Free version only allows creation of tickets for sites or games which I own (for testing, user feedback etc.) Were this project to be developed commercially it would create an organisation model which would only load bugs associated with a specific organisation or user. 
 
 ## Contents:
 
@@ -260,9 +261,15 @@ Order Model
 - Gitpod
 - Stripe
 
+<br>
+
 ## Testing
 
-**Automated testing** was implemented on this project from an early stage using **Travis**. Travis allows the results of their testing to be shown in realtime in this readme file - it is available near the top of this readme and also here: 
+<br>
+
+### **Automated testing** 
+
+This was implemented on this project from an early stage using **Travis**. Travis allows the results of their testing to be shown in realtime in this readme file - it is available near the top of this readme and also here: 
 
 [![Build Status](https://travis-ci.org/geminerald/bugzapp.svg?branch=master)](https://travis-ci.org/geminerald/bugzapp)
 
@@ -270,7 +277,9 @@ Travis ran automated testing on the code at each push and notified me via email 
 
 In this way many errors were caught before they became embedded in the code and/or difficult to find. This also allowed errors to be more easily identified due to the frequency of the Travis tests and the log of the tests run by Travis. 
 
-**Manual Testing**
+<br>
+
+### **Manual Testing**
 
 Manual testing was undertaken throughout development to ensure that all features were functioning and also that new features were not interfering with previously implemented ones. The following is an example of manual testing undertaken by the devleoper throughout development.
 
@@ -296,7 +305,10 @@ Manual testing was undertaken throughout development to ensure that all features
 **Conclusion**
 
 
-**User Testing**
+<br>
+
+
+###  **User Testing**
 
 The project was demonstrated to multiple users throughout development. The users in question were primarily my family and friends. I am fortunate in this regard as in this group there are people who would be within the target audience including professional developers and technology professionals and also complete novices who are unfamiliar with the industry.
 
@@ -319,7 +331,9 @@ The other users who would be more tech savvy also helped ensure that it would be
 
 ****
 
-**Code Validation**
+<br>
+
+### **Code Validation**
 
 Close attention was paid to formatting throughout this project. Formatting is vital when writing code as it allows other people (or the original writer at a later date) to quickly understand what the code is trying to achilve and be able to make alterations as needed. 
 
@@ -328,6 +342,9 @@ Close attention was paid to formatting throughout this project. Formatting is vi
 It is also important to do this on an ongoing basis and not trying to refactor code to accommodate this at a later date since this essentially ensures that it will not be effective and is also not best practice for when working with others.
 
 [GitPod](https://www.gitpod.io/) was the primary IDE used in the developement of this project and comes with a built in feature that allows errors and best practice opportunities to be shown in real time by means of underlining. This allowed me to keep the code clean and legible on an ongoing basis and be confident that I would be able to read and understand what I had written down at any point provided I ensured to address all the highlighted issues before comitting code. 
+
+****
+****
 
 ## Bugs
 
