@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, reverse
 
 # Create your views here.
 
@@ -25,4 +25,4 @@ def add_to_cart(request, item_id):
 
     request.session['cart'] = cart
 
-    return redirect(redirect_url)
+    return redirect(reverse('checkout'))  # redirect(redirect_url)
