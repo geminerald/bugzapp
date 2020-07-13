@@ -298,6 +298,27 @@ Manual testing was undertaken throughout development to ensure that all features
 
 **User Testing**
 
+The project was demonstrated to multiple users throughout development. The users in question were primarily my family and friends. I am fortunate in this regard as in this group there are people who would be within the target audience including professional developers and technology professionals and also complete novices who are unfamiliar with the industry.
+
+The users who tested the project who were not in the target audience helped ensure that it was kept simple and straightforward and that there was sufficient explanation for elements. This helps ensure that if launching this project it would not have any issues with new users. 
+
+The other users who would be more tech savvy also helped ensure that it would be intuitive for people within the industry and that it had the key features that mattered to them. I would like to particularly thank [Deborah Boyewa](https://www.linkedin.com/in/deborah-b-6474b7158/), [Shane Quinn](https://www.linkedin.com/in/shanequinn/) and [Steven Verjans](https://www.linkedin.com/in/stevenverjans/) for their assistance in this matter. 
+
+
+****
+
+**System to Test:** Layout
+
+**User Feedback:** Users were asked to sign up and navigate around the website to specific places. No assistance was provided to them to ensure that any issues were discovered and noted. 
+
+**Actions Taken:** Extra links were added which lead to the same place, for example there are multiple links to the "Sign Up" page to ensure that whichever way people found out that they wanted to they were able to sign up for an account.
+
+**Result:** It is now very intuitive and simple to sign up for an account and navigate around the site by means of large buttons, icons on buttons and clear messaging.
+
+**Conclusion** Success but more user feedback is always needed to strive to constantly improve. 
+
+****
+
 **Code Validation**
 
 Close attention was paid to formatting throughout this project. Formatting is vital when writing code as it allows other people (or the original writer at a later date) to quickly understand what the code is trying to achilve and be able to make alterations as needed. 
