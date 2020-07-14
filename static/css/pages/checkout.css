@@ -114,6 +114,10 @@ h3 {
     height: 100%;
 }
 
+.icon{
+    color: var(--required-colour);
+}
+
 @media screen and (max-width: 1068px) {
   .buttons {
     width: 100%;
