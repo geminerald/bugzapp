@@ -54,11 +54,16 @@
           </span>
           <span class="text-uppercase">Go Back</span>
         </a>
+        {% if product.name == "Free" %}
+        
+        <a class="signup-button" href="{% url 'account_signup' %}">Sign Up</a>
+        {% else %}
         <input
           type="submit"
           class="btn btn-success rounded-0 text-uppercase mt-5"
           value="Buy Now"
         />
+        {% endif %}
       </div>
       <input type="hidden" name="redirect_url" value="{{ request.path }}" />
     </div>
