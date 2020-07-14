@@ -103,7 +103,12 @@ h3 {
     width: 100%;
     height: 100%;
     z-index: 999;
-    background-color: var(--primary-colour); 
+    background-color: var(--white-colour);
+    color: var(--black-colour); 
+}
+
+#spinner-icon{
+    color: var(--black-colour);
 }
 
 .loading-spinner{
@@ -111,7 +116,9 @@ h3 {
     align-items: center;
     justify-content: center;
     margin: 0;
-    height: 100%;
+    height: 50%;
+    background-color: var(--white-colour);
+    color: var(--black-colour); 
 }
 
 .icon{
