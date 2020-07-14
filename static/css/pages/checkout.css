@@ -125,6 +125,22 @@ h3 {
     color: var(--required-colour);
 }
 
+.centre-col{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.back-button{
+    border: 2px solid var(--primary-colour);
+    border-radius: 6px;
+    color: var(--white-colour);
+    text-decoration: none;
+    padding: 2rem;
+    margin: 2rem;
+}
+
 @media screen and (max-width: 1068px) {
   .buttons {
     width: 100%;
