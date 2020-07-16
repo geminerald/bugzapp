@@ -25,3 +25,9 @@ img {
 h2{
     margin: 1rem;
 }
+
+.about-p-link{
+    color: var(--success-colour);
+    text-decoration: none;
+    cursor: pointer;
+}
