@@ -1,4 +1,5 @@
 from django.shortcuts import render, get_object_or_404, redirect
+from allauth.account.decorators import verified_email_required
 from .models import Ticket
 from .forms import AddForm
 
@@ -25,7 +26,7 @@ def viewticket(request, ticket_id):
     Renders a page showing one specific ticket taking the ticket ID as a parameter
     """
 
-    ticket = get_object_or_404(Ticket, pk=ticket_id)
+    ticket = get_object_or_404(Ticket, pk=ticket_id) if pk else None
 
     context = {
         'ticket': ticket,
