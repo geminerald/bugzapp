@@ -26,7 +26,7 @@ def viewticket(request, ticket_id):
     Renders a page showing one specific ticket taking the ticket ID as a parameter
     """
 
-    ticket = get_object_or_404(Ticket, pk=ticket_id) if pk else None
+    ticket = get_object_or_404(Ticket, pk=ticket_id) if ticket_id else None
 
     context = {
         'ticket': ticket,
