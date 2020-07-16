@@ -13,30 +13,30 @@
 <div class="overlay"></div>
 <div class="bug-container">
 	<div class="row title-row">
-		<div class="col">
+		<div class="col-xs-12 col-md-4">
 			<h1>{{ ticket.title }}</h1>
 		</div>
-		<div class="col">
+		<div class="col-xs-12 col-md-4">
 			<p>Created by {{ ticket.user }} on {{ ticket.creation_date }}</p>
 		</div>
 	</div>
 	<hr />
 	<div class="row summary-row">
-		<div class="col">
+		<div class="col-xs-12 col-md-4">
 			Type: {{ ticket.type }}
 		</div>
-		<div class="col">Status: {{ ticket.status }}</div>
-		<div class="col">Score: {{ ticket.score }}</div>
+		<div class="col-xs-12 col-md-4">Status: {{ ticket.status }}</div>
+		<div class="col-xs-12 col-md-4">Score: {{ ticket.score }}</div>
 	</div>
-	<hr />
+	<hr class="hidden-xs hidden-xm display-md" />
 	<div class="row description-row">
-		<div class="col">
+		<div class="col-xs-12 col-md-4">
 			<h2>Summary and Notes</h2>
 		</div>
-		<div class="col">{{ ticket.description }}</div>
-		<div class="col">
+		<div class="col-xs-12 col-md-4">{{ ticket.description }}</div>
+		<div class="col-xs-12 col-md-4">
 			<form>
-				<input type="textarea" /><button class="notes-button">Add Notes</button>
+				<input class="textarea" type="textarea" /><button class="notes-button">Add Notes</button>
 			</form>
 		</div>
 	</div>

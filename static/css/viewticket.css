@@ -26,11 +26,10 @@ hr {
 }
 
 form {
-  height: 100%;
+  min-height: 100%;
 }
 
 form input {
-  height: 90%;
   border-radius: 6px;
 }
 
@@ -50,9 +49,11 @@ form input {
   box-shadow: 0 1.6rem 3.2rem 0 rgba(55, 0, 179, 1);
 }
 
-
+.textarea{
+    height: 60%;
+}
 
 .title-row, .summary-row{
-    height: 2rem;
+    min-height: 2rem;
     margin-top: 1rem;
 }
