@@ -2,6 +2,8 @@ img {
   height: 80%;
   width: 80%;
   margin: 1rem auto;
+  border: 2px solid var(--white-colour);
+  box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.9);
 }
 
 .header-row {
@@ -14,11 +16,9 @@ img {
     align-items: center;
   margin: 5rem auto;
   padding: 5rem;
-  border: 1px solid blue;
 }
 
 .row{
-    border: 1px solid red;
     width: 100%;
 }
 
