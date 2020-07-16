@@ -71,6 +71,10 @@ footer .container a{
     color: var(--off-white-colour);
 }
 
+.container p{
+    margin-bottom: 0;
+}
+
 /* Main container across all pages */
 
 .main-container {
