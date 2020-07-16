@@ -1,37 +1,46 @@
-{% extends 'base.html' %}
+{% extends 'base.html' %} 
 
-{% load static %}
+{% load static %} 
 
 {% block extra_css %}
 
 <link rel="stylesheet" href="{% static 'css/about.css' %}" />
 
-{% endblock %}
+{% endblock %} 
 
 {% block content %}
 
 <div class="overlay"></div>
 <div class="row header-row">
-	<h1>About Us</h1>
+  <h1>About Us</h1>
 </div>
 
 <div class="row">
-	<div class="col hidden-xs hidden-sm block-md">
-		<img src="{% static 'images/banner-1.jpg' %}" alt="image of technology stuff">
+  <div class="col hidden-xs hidden-sm block-md">
+    <img
+      src="{% static 'images/banner-1.jpg' %}"
+      alt="image of technology stuff"
+    />
+  </div>
+  <div class="col">
+    <h2>What is BugZapp?</h2>
+    <p>
+      It's a system to track bugs and request features. You can download the
+      system to use it on your own projects or you can sign up to try it before
+      you buy it.
+    </p>
+  </div>
 </div>
-		<div class="col">
-			<h2>What is BugZapp?</h2>
-			<p>It's a system to track bugs and request features. You can download the system to use it on your
-				own projects or you can sign up to try it before you buy it. </p>
-		</div>
-	</div>
-	<div class="row">
-
-		<div class="col">
-			<h2>Who we are:</h2>
-			<p>Geminerald - Zac Warner - Web developer - Code Institute - Hire Me!</p>
-		</div>
-		<div class="col hidden-xs hidden-sm block-md"><img src="{% static 'images/banner-1.jpg' %}" alt="image of technology stuff">
+<div class="row">
+  <div class="col">
+    <h2>Who we are:</h2>
+    <p>Geminerald - Zac Warner - Web developer - Code Institute - Hire Me!</p>
+  </div>
+  <div class="col hidden-xs hidden-sm block-md">
+    <img
+      src="{% static 'images/banner-1.jpg' %}"
+      alt="image of technology stuff"
+    />
+  </div>
 </div>
-		</div>
-		{% endblock %}
+{% endblock %}
