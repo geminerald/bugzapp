@@ -5,6 +5,7 @@ from .forms import AddForm
 # Create your views here.
 
 
+@verified_email_required
 def tickets(request):
     """
     Renders a page showing all currently open tickets
@@ -18,6 +19,7 @@ def tickets(request):
     return render(request, 'tickets.html', context)
 
 
+@verified_email_required
 def viewticket(request, ticket_id):
     """
     Renders a page showing one specific ticket taking the ticket ID as a parameter
@@ -32,6 +34,7 @@ def viewticket(request, ticket_id):
     return render(request, 'viewticket.html', context)
 
 
+@verified_email_required
 def addticket(request):
 
     if request.method == "POST":
