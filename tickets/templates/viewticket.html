@@ -32,8 +32,13 @@
 	<div class="row description-row">
 		<div class="col-xs-12 col-md-4">
 			<h2>Summary and Notes</h2>
+            <p>{{ ticket.description }}</p>
 		</div>
-		<div class="col-xs-12 col-md-4">{{ ticket.description }}</div>
+		<div class="col-xs-12 col-md-4">
+        {% for note in notes %}
+            {{ note.content }} - added by {{ note.user }} on {{ note.creation_date }}
+        {% endfor %}
+        </div>
 		<div class="col-xs-12 col-md-4">
 			<form method="POST" action="{% url 'viewticket' ticket.id %}">
                 {% csrf_token %}
