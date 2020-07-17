@@ -5,7 +5,7 @@ from django.contrib.auth.models import User
 
 
 class Note(models.Model):
-    tickets = models.ForeignKey('tickets.Ticket')
+    tickets = models.ForeignKey('tickets.Ticket',on_delete=models.CASCADE,)
     user = models.ForeignKey(User, on_delete=models.CASCADE, null=True, blank=True,)
     content = models.TextField(blank= False, null = False)
     creation_date = models.DateTimeField(auto_now_add=True)
