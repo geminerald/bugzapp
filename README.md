@@ -215,11 +215,13 @@ Order Model
 - Payment System
 - Checkout & Payment Page
 - User Model
+- Ticket Model
+- About Page
+- Search Bugs System
 
 ### Features in Development
 
-- Ticket Model
-- About Page
+- Sort and Filter System
 
 ### Features to be Developed
 
@@ -227,8 +229,6 @@ Order Model
 - Profile Page
 - Tags System
 - Upvoting System
-- Sort and Filter System
-- Search Bugs System
 
 ## Technologies
 
