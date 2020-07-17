@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
-
+{% load crispy_forms_tags %}
 {% load static %}
+
 
 {% block extra_css %}
 
@@ -42,7 +43,9 @@
 		<div class="col-xs-12 col-md-4">
 			<form method="POST" action="{% url 'viewticket' ticket.id %}">
                 {% csrf_token %}
-				<input class="textarea" type="textarea" /><button class="notes-button" type="submit" >Add Notes</button>
+				{{ add_note_form | crispy }}
+                <input type="hidden" name="tickets_id" id="tickets_id" value="{{ ticket.id }}">
+                <button class="notes-button" type="submit" >Add Notes</button>
 			</form>
 		</div>
 	</div>

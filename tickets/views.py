@@ -44,22 +44,25 @@ def viewticket(request, ticket_id):
 
     ticket = get_object_or_404(Ticket, pk=ticket_id) if ticket_id else None
 
-    # ticket_notes = Note.objects.filter(ticket=ticket_id).order_by('-creation_date')
+    ticket_notes = Note.objects.filter(tickets_id=ticket_id).order_by('-creation_date')
 
     if request.method == "POST":
         add_note_form = AddNoteForm(request.POST)
         if add_note_form.is_valid():
             note = add_note_form.save(commit=False)
-
-            # ticket = Ticket.objects.get(id=ticket_id)
-            note.ticket = ticket
+            note.tickets = ticket_id
             note.user = request.user
             note.save()
-            print(note)
-            return redirect('viewticket', pk=ticket_id)
+            return redirect('viewticket', ticket_id=ticket_id)
+        else:
+            messages.error(request, "The operation was unsuccessful")
+    else:
+        add_note_form = AddNoteForm()
 
     context = {
         'ticket': ticket,
+        'add_note_form': add_note_form,
+        'notes': ticket_notes,
     }
 
     return render(request, 'viewticket.html', context)

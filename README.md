@@ -382,10 +382,16 @@ It is also important to do this on an ongoing basis and not trying to refactor c
 
 **Issue:** No message displayed if no Q entered on tickets page. 
 
-**Actions Taken:** 
+**Actions Taken:** Added logic to test for empty field and display appropriate messaging.
 
-**Status:** Ongoing
+**Status:** Resolved
 
+****
+**Issue:** Notes will not save to a ticket due to validation errors. . 
+
+**Actions Taken:** Views fields are being edited and form fields are being adjusted to try to get system working.
+
+**Status:** As yet unresolved
 ****
 
 ## Credits
