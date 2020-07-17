@@ -35,8 +35,9 @@
 		</div>
 		<div class="col-xs-12 col-md-4">{{ ticket.description }}</div>
 		<div class="col-xs-12 col-md-4">
-			<form>
-				<input class="textarea" type="textarea" /><button class="notes-button">Add Notes</button>
+			<form method="POST" action="{% url 'viewticket' ticket.id %}">
+                {% csrf_token %}
+				<input class="textarea" type="textarea" /><button class="notes-button" type="submit" >Add Notes</button>
 			</form>
 		</div>
 	</div>

@@ -4,6 +4,8 @@ from django.contrib import messages
 from django.db.models import Q
 from .models import Ticket
 from .forms import AddForm
+from notes.models import Note
+from notes.forms import AddNoteForm
 
 # Create your views here.
 
@@ -36,10 +38,25 @@ def tickets(request):
 @verified_email_required
 def viewticket(request, ticket_id):
     """
-    Renders a page showing one specific ticket taking the ticket ID as a parameter
+    Renders a page showing one specific ticket taking the ticket
+    ID as a parameter
     """
 
     ticket = get_object_or_404(Ticket, pk=ticket_id) if ticket_id else None
+
+    # ticket_notes = Note.objects.filter(ticket=ticket_id).order_by('-creation_date')
+
+    if request.method == "POST":
+        add_note_form = AddNoteForm(request.POST)
+        if add_note_form.is_valid():
+            note = add_note_form.save(commit=False)
+
+            # ticket = Ticket.objects.get(id=ticket_id)
+            note.ticket = ticket
+            note.user = request.user
+            note.save()
+            print(note)
+            return redirect('viewticket', pk=ticket_id)
 
     context = {
         'ticket': ticket,
