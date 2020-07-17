@@ -402,4 +402,4 @@ Thanks also to the [Code Institute](https://codeinstitute.net/) Tutors for their
 
 Thanks to the hundreds of nameless people on [Stack Overflow](https://stackoverflow.com/) who answered my questions posted to google.
 
-The Navbar elements were heavinly inspired by the [Dev Ed](https://github.com/developedbyed) [YouTube](https://www.youtube.com/channel/UClb90NQQcskPUGDIXsQEz5Q) channel. 
+The Navbar elements were inspired by the [Dev Ed](https://github.com/developedbyed) [YouTube](https://www.youtube.com/channel/UClb90NQQcskPUGDIXsQEz5Q) channel. 

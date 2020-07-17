@@ -8,7 +8,7 @@ def products(request):
     """
     Renders a page showing all currently open tickets
     """
-    products = Product.objects.all()
+    products = Product.objects.all().order_by('price')
 
     context = {
         'products': products,
