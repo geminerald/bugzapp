@@ -376,6 +376,16 @@ It is also important to do this on an ongoing basis and not trying to refactor c
 **Actions Taken:** When quantity was rmoved from basic models the site couldn't add, set hidden qty in formatting
 
 **Status:** Resolved
+
+
+****
+
+**Issue:** No message displayed if no Q entered on tickets page. 
+
+**Actions Taken:** 
+
+**Status:** Ongoing
+
 ****
 
 ## Credits

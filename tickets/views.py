@@ -20,8 +20,8 @@ def tickets(request):
         if 'q' in request.GET:
             query = request.GET['q']
             if not query:
-                messages.error(request, "Ticket Not Found")
-                return redirect(reverse('products'))
+                messages.success(request, "Ticket Not Found")
+                return redirect(reverse('tickets'))
             queries = Q(title__icontains=query) | Q(description__icontains=query)
             tickets = tickets.filter(queries)
 
