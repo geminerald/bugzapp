@@ -1,5 +1,7 @@
-from django.shortcuts import render, get_object_or_404, redirect
+from django.shortcuts import render, get_object_or_404, redirect, reverse
 from allauth.account.decorators import verified_email_required
+from django.contrib import messages
+from django.db.models import Q
 from .models import Ticket
 from .forms import AddForm
 
@@ -12,9 +14,20 @@ def tickets(request):
     Renders a page showing all currently open tickets
     """
     tickets = Ticket.objects.all()
+    query = None
+
+    if request.GET:
+        if 'q' in request.GET:
+            query = request.GET['q']
+            if not query:
+                messages.error(request, "Ticket Not Found")
+                return redirect(reverse('products'))
+            queries = Q(title__icontains=query) | Q(description__icontains=query)
+            tickets = tickets.filter(queries)
 
     context = {
         'tickets': tickets,
+        'search_term': query,
     }
 
     return render(request, 'tickets.html', context)
