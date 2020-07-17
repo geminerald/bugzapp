@@ -20,14 +20,17 @@
             </button>
         </div>
 	</form>
-    <select name="status-select" id="status-select">
-    <option value="opened" selected >Open</option>
-    <option value="closed">Closed</option>
-    </select>
+    <form method="GET" action="{% url 'tickets' %}">
+        <select name="status-select" id="status-select">  
+            <option value="empty" selected >Status</option>
+            <option value="opened" >Open</option>
+            <option value="closed">Closed</option>
+        </select>
+    </form>
     <select name="type-select" id="type-select">    
-    <option value="empty" selected >Type</option>
-    <option value="bug" >Bug Report</option>
-    <option value="feature">Feature Request</option>
+        <option value="empty" selected >Type</option>
+        <option value="bug" >Bug Report</option>
+        <option value="feature">Feature Request</option>
     </select>
 </div>
 <hr />
