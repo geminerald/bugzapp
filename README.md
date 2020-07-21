@@ -75,18 +75,17 @@ the issues as required.
 ### User Stories
 
 
-| As a | I want to | So that I |
+| As a | I want to | So that I can |
 | --- | --- | --- | --- |
-| User |Do Stuff | can have stuff happen |
-| User |Do Stuff | can have stuff happen |
-| User |Do Stuff | can have stuff happen |
-| User |Do Stuff | can have stuff happen |
-| User |Do Stuff | can have stuff happen |
+| User |Create Bug Reports |  let the relevant people know of issues |
+| User |Have a fully responsive service |  access tickets across all devices |
+| User | Be able to try the service before I buy it |  be confident in  my purchase |
+| User | Create an account and have the website repond accordingly |  access secure areas of the website |
+| User | Purchase the software securely  | use the system myself without risking my personal data |
 |  |  |  |  |
-| Site Owner |Do Stuff | can have stuff happen |
-| Site Owner |Do Stuff | can have stuff happen |
-| Site Owner |Do Stuff | can have stuff happen |
-| Site Owner |Do Stuff | can have stuff happen |
+| Site Owner | Receive bug reports and feature requests | improve my work |
+| Site Owner | Generate revenue by selling this software| afford to work more on my own projects |
+| Site Owner | Learn Django | create websites quickly and effectively |
 
 
 ### User Requirements and Expectations
