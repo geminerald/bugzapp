@@ -30,6 +30,7 @@ Free version only allows creation of tickets for sites or games which I own (for
 - [Planning](#planning)
     - [Wireframes](#wireframes)
     - [Site Map](#site-map)
+    - [Informational Architecture](#informational-architecture)
 
 - [Features](#features)
     - [Implemented](#developed-features)
@@ -172,9 +173,9 @@ To view the wireframes for this project please go to the [Wireframes Folder](htt
 
 ### Site Map
 
-### Models
+### Informational Architecture
 
-Bug Model
+#### Bug Model
 
 | Name | DB Name | Validation | Type |
 | --- | --- | --- | --- |
@@ -186,7 +187,7 @@ Bug Model
 | Creation Date | creation_date | auto_now_add=True | DateTimeField | 
 | Score | score | default=0 | IntegerField |
 
-Order Model
+#### Order Model
 
 | Name | DB Name | Validation | Type |
 | --- | --- | --- | --- |
