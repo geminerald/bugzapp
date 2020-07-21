@@ -63,10 +63,9 @@ the issues as required.
 ### User Goals
 
 * Create bug reports and track them to resolution.
-* Update bug reports.
 * A visually appealing and straightforward design.
 * A fully responsive service that operates the same across all devices.
-* Have an overview of currently reported issues or historical data.
+* Have an overview of currently reported issues.
 
 ### Site Owner Goals
 
@@ -75,9 +74,20 @@ the issues as required.
 
 ### User Stories
 
-* "I need a way to track issues for projects that I was working on. Notepad or sticky notes are just cluttered and often deleted or impossible to find" - John
-* "I always think that you should let someone try a product before they buy it. It just makes it easier for everyone to get what they want" - Deborah
-* "On a website you want to make sure that you only have the options you need - you don't want it cluttered up with hundreds of buttons you don't understand let alone use" - Victor
+
+| As a | I want to | So that I |
+| --- | --- | --- | --- |
+| User |Do Stuff | can have stuff happen |
+| User |Do Stuff | can have stuff happen |
+| User |Do Stuff | can have stuff happen |
+| User |Do Stuff | can have stuff happen |
+| User |Do Stuff | can have stuff happen |
+|  |  |  |  |
+| Site Owner |Do Stuff | can have stuff happen |
+| Site Owner |Do Stuff | can have stuff happen |
+| Site Owner |Do Stuff | can have stuff happen |
+| Site Owner |Do Stuff | can have stuff happen |
+
 
 ### User Requirements and Expectations
 
