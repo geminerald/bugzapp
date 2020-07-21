@@ -173,6 +173,8 @@ To view the wireframes for this project please go to the [Wireframes Folder](htt
 
 ### Site Map
 
+![alt text](https://raw.githubusercontent.com/geminerald/bugzapp/master/wireframes/Sitemap.JPG "Sitemap")
+
 ### Informational Architecture
 
 #### Bug Model
