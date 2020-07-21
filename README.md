@@ -235,34 +235,28 @@ To view the wireframes for this project please go to the [Wireframes Folder](htt
 
 ## Technologies
 
-### Core Technologies:
+### Languages:
 
-- HTML 5 
+- HTML
 - CSS 
 - JavaScript 
 - Python 
 - Git 
 
-### Libraries/ Frameworks:
+### Libraries:
 
-- CSS:
-    - Bootstrap
-    - Sass
-- JavaScript:
-    - Sweet Alerts
-    - Stripe
+- Bootstrap
+- Stripe
+- Django
 
-- Python:
-    - Django
-
-- Git:
-    - GitHub
-    - Gitpod
-
-### API/ External Resources:
+### Tools:
 
 - Gitpod
 - Stripe
+- Whitenoise
+- Django Crispy Forms
+- GitHub
+- GitPod
 
 <br>
 
