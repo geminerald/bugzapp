@@ -24,7 +24,8 @@ def tickets(request):
             if not query:
                 messages.success(request, "Ticket Not Found")
                 return redirect(reverse('tickets'))
-            queries = Q(title__icontains=query) | Q(description__icontains=query)
+            queries = Q(title__icontains=query) | Q(
+                description__icontains=query)
             tickets = tickets.filter(queries)
 
     context = {
@@ -44,7 +45,8 @@ def viewticket(request, ticket_id):
 
     ticket = get_object_or_404(Ticket, pk=ticket_id) if ticket_id else None
 
-    ticket_notes = Note.objects.filter(tickets_id=ticket_id).order_by('-creation_date')
+    ticket_notes = Note.objects.filter(
+        tickets_id=ticket_id).order_by('-creation_date')
 
     if request.method == "POST":
         add_note_form = AddNoteForm(request.POST)
@@ -82,4 +84,5 @@ def addticket(request):
             return redirect('tickets')
     else:
         add_ticket_form = AddForm()
-    return render(request, 'addticket.html', {'add_ticket_form': add_ticket_form})
+    return render(request, 'addticket.html',
+                  {'add_ticket_form': add_ticket_form})

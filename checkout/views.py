@@ -41,12 +41,14 @@ def checkout(request):
                     orderline.save()
                 except Product.DoesNotExist:
                     messages.error(request, (
-                        'You have selected an invalid product, please try again'
+                        'You have selected an invalid product,\
+                             please try again'
                     ))
                     order.delete()
                     return redirect(reverse('view_cart'))
             request.session['save_info'] = 'save-info' in request.POST
-            return redirect(reverse('checkout_success', args=[order.order_number]))
+            return redirect(reverse('checkout_success',
+                                    args=[order.order_number]))
         else:
             messages.error(request, 'There was an error in your form')
     else:
@@ -69,7 +71,8 @@ def checkout(request):
 
         if not stripe_public_key:
             messages.warning(
-                request, 'Stripe public key is missing, did you forget to add it?')
+                request, 'Stripe public key is missing,\
+                     did you forget to add it?')
 
         template = 'checkout.html'
         context = {
@@ -98,6 +101,7 @@ def checkout_success(request, order_number):
     template = 'checkout_success.html'
     context = {
         'order': order,
+        'save_info': save_info
     }
 
     return render(request, template, context)
