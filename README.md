@@ -6,7 +6,7 @@ An Online Bug tracker offering convenient ways to monitor and update statuses of
 
 Offering a trial for projects operated by me where users can submit bugs or feature requests for websites or games created by me. 
 
-Alternatively users can buy the system for use on their own projects. The third optoin would be to select to purchase multiple copies of the system to use in a business setting.
+Alternatively users can buy the system for use on their own projects. The third option would be to select to purchase multiple copies of the system to use in a business setting.
 
 Free version only allows creation of tickets for sites or games which I own (for testing, user feedback etc.) Were this project to be developed commercially it would create an organisation model which would only load bugs associated with a specific organisation or user. 
 
@@ -38,8 +38,15 @@ Free version only allows creation of tickets for sites or games which I own (for
     - [To be Developed](#features-to-be-developed)
 
 - [Technologies](#technologies)
+    - [Languages](#languages)
+    - [Libraries](#libraries)
+    - [Tools](#tools)
 
 - [Testing](#testing)
+    - [Automated Testing](#automated-testing)
+    - [Manual Testing](#manual-testing)
+    - [User Testing](#user-testing)
+    - [Code Validation](#code-validation)
 
 - [Bugs](#bugs)
 
@@ -235,7 +242,7 @@ To view the wireframes for this project please go to the [Wireframes Folder](htt
 
 ## Technologies
 
-### Languages:
+### Languages
 
 - HTML
 - CSS 
@@ -243,13 +250,13 @@ To view the wireframes for this project please go to the [Wireframes Folder](htt
 - Python 
 - Git 
 
-### Libraries:
+### Libraries
 
 - Bootstrap
 - Stripe
 - Django
 
-### Tools:
+### Tools
 
 - Gitpod
 - Stripe
@@ -266,7 +273,7 @@ To view the wireframes for this project please go to the [Wireframes Folder](htt
 
 ### **Automated testing** 
 
-This was implemented on this project from an early stage using **Travis**. Travis allows the results of their testing to be shown in realtime in this readme file - it is available near the top of this readme and also here: 
+Automated Testing was implemented on this project from an early stage using [**Travis**](https://travis-ci.org/). Travis allows the results of their testing to be shown in realtime in a readme file - it is available near the top of this readme and also here: 
 
 [![Build Status](https://travis-ci.org/geminerald/bugzapp.svg?branch=master)](https://travis-ci.org/geminerald/bugzapp)
 
