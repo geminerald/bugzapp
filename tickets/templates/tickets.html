@@ -30,17 +30,18 @@
 
     <div class="row ticket">
         <div class="col">
-            <h3>{{ ticket.title }}</h3>
-            <h4>{{ ticket.status }}</h4>
+            <h3>Title: {{ ticket.title }}</h3>
+            <h4>Status: {{ ticket.status }}</h4>
         </div>
         <div class="col">
-            <h5>{{ ticket.type }}</h5>
-            <h5>{{ ticket.project }}</h5>
+            <h5>Type: {{ ticket.type }}</h5>
+            <h5>Project: {{ ticket.project }}</h5>
         </div>
         <div class="col">
+        <h5>Summary:</h5>
             {{ ticket.description }}
         </div>
-        <div class="col">
+        <div class="col button-col">
             <a class="button" href="{% url 'viewticket' ticket.id %}">View Ticket</a>
         </div>
     </div>

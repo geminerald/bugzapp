@@ -68,3 +68,9 @@ button {
   color: var(--white-colour);
   text-decoration: none;
 }
+
+.button-col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
