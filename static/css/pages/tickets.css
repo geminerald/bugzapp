@@ -16,8 +16,9 @@ select {
   border-radius: 6px;
 }
 
-.searchbar{
+#searchbar{
     width: 80%;
+    height: 2.5rem;
 }
 
 .search-button{
