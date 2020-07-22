@@ -4,7 +4,8 @@ from .models import Ticket
 
 
 class TicketAdmin(admin.ModelAdmin):
-    fields = ['title', 'type', 'status', 'score', 'description', 'user']
+    fields = ['title', 'type', 'status', 'score', 'description', 'user',
+              'project']
     readonly_fields = ['user']
 
 
