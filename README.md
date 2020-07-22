@@ -47,6 +47,7 @@ Free version only allows creation of tickets for sites or games which I own (for
     - [Manual Testing](#manual-testing)
     - [User Testing](#user-testing)
     - [Code Validation](#code-validation)
+    - [Testing Against User Stories](#testing-against-user-stories)
 
 - [Bugs](#bugs)
 
@@ -242,7 +243,7 @@ To view the wireframes for this project please go to the [Wireframes Folder](htt
 
 - Sort and Filter System
 
-### Features to be Developed
+### Features to be Developed in Future
 
 - Organisation Model
 - Profile Page
@@ -262,7 +263,7 @@ To view the wireframes for this project please go to the [Wireframes Folder](htt
 ### Libraries
 
 - Bootstrap
-- Stripe
+- jQuery
 - Django
 
 ### Tools
@@ -358,6 +359,20 @@ It is also important to do this on an ongoing basis and not trying to refactor c
 
 ****
 ****
+
+### Testing Against User Stories
+
+| As a | I want to | So that I can | Test Run | Verdict |
+| --- | --- | --- | --- | --- | --- |
+| User |Create Bug Reports |  let the relevant people know of issues | Clicking Add Ticket to create a new bug report | Test Passes |
+| User |Have a fully responsive service |  access tickets across all devices | Using Dev tools to ensure functionality accross tablet and mobile devices | Test Passes |
+| User | Be able to try the service before I buy it |  be confident in  my purchase | Users can set up accounts and access base functionality | Test Passes |
+| User | Create an account and have the website repond accordingly |  access secure areas of the website | Trying to access checkout or ticket system while not logged in redirects to login page | Test passes |
+| User | Purchase the software securely  | use the system myself without risking my personal data | Checkouts can be completed securely using Stripe which also handles security | Test Passes |
+|  |  |  |  |
+| Site Owner | Receive bug reports and feature requests | improve my work | Tickets can be created and are shown in the Tickets page | Test Passes |
+| Site Owner | Generate revenue by selling this software| afford to work more on my own projects | functionality is there - would just need to be updated on Stripe | Test Passes
+| Site Owner | Learn Django | create websites quickly and effectively | I am able to create and run django projects and apps | Passing and ongoing |
 
 ## Bugs
 
