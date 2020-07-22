@@ -53,7 +53,7 @@ def viewticket(request, ticket_id):
         add_note_form = AddNoteForm(request.POST)
         if add_note_form.is_valid():
             note = add_note_form.save(commit=False)
-            note.tickets = ticket_id
+            note.tickets = ticket
             note.user = request.user
             note.save()
             return redirect('viewticket', ticket_id=ticket_id)
