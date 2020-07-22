@@ -16,13 +16,13 @@ select {
   border-radius: 6px;
 }
 
-#searchbar{
-    width: 80%;
-    height: 2.5rem;
+#searchbar {
+  width: 80%;
+  height: 2.5rem;
 }
 
-.search-button{
-    width: 20%;
+.search-button {
+  width: 20%;
 }
 
 .search-and-filter form {
@@ -51,4 +51,20 @@ button {
   margin: 0;
   box-shadow: none;
   width: 15%;
+}
+
+.button {
+  background-color: var(--white-colour);
+  color: var(--black-colour);
+  text-decoration: none;
+  padding: 1rem;
+  border-radius: 6px;
+  transition: 0.5s ease-in-out;
+  border: 1px solid var(--white-colour);
+}
+
+.button:hover {
+  background-color: var(--black-colour);
+  color: var(--white-colour);
+  text-decoration: none;
 }
