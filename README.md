@@ -300,13 +300,13 @@ Manual testing was undertaken throughout development to ensure that all features
 
 ****
 
-**System to Test:** 
+**System to Test:** Navigation
 
-**Actions Taken:** 
+**Actions Taken:** Firstly layout was important, ensuring that the navbar was consistent throughout the project by including it in the base template helped ensure there was less chance of an error. Apart from this it was ensured that all links went to the correct place by clicking on them.
 
-**Result:** 
+**Result:** All links functioned as expected throughout and were corrected in the cases where there had been an error.
 
-**Conclusion**
+**Conclusion** Navigation works as designed and is modular enough to allow for future updates if needed.
 
 ****
 
