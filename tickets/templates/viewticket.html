@@ -37,7 +37,10 @@
 		</div>
 		<div class="col-xs-12 col-md-4">
         {% for note in notes %}
-            {{ note.content }} - added by {{ note.user }} on {{ note.creation_date }}
+            
+            <p class="note-text"> {{ note.content }}</p> <br> 
+            - added by {{ note.user }} on {{ note.creation_date }}
+            <hr>
         {% endfor %}
         </div>
 		<div class="col-xs-12 col-md-4">
