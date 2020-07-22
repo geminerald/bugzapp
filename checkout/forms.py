@@ -10,6 +10,9 @@ class OrderForm(forms.ModelForm):
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
+        """
+        Returns the form for a user to place an order on init.
+        """
 
         placeholders = {
             'full_name': 'Full Name',

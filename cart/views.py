@@ -12,6 +12,10 @@ def cart(request):
 
 
 def add_to_cart(request, item_id):
+    """
+    Takes an item ID and adds that item to the cart which can then be accessed
+    via the contexts.py file in this app throughout the site.
+    """
     quantity = int(request.POST.get('quantity'))
 
     cart = request.session.get('cart', {})

@@ -12,5 +12,8 @@ class Note(models.Model):
     creation_date = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
+        """
+        Returns note details.
+        """
         return "{0} note added by {1} on {2}".format(self.ticket, self.user,
                                                      self.creation_date)

@@ -3,6 +3,11 @@ from products.models import Product
 
 
 def cart_contents(request):
+    """
+    Keeps a running count of items in the cart if the user leaves before
+    checking out. Returns this in a context which is accessible throughout
+    the site.
+    """
 
     cart_items = []
     total = 0
@@ -24,5 +29,4 @@ def cart_contents(request):
         'total': total,
         'product_count': product_count
     }
-    print(context)
     return context

@@ -73,6 +73,9 @@ def viewticket(request, ticket_id):
 
 @verified_email_required
 def addticket(request):
+    """
+    Renders add ticket page if GET, posts new ticket to DB if POST
+    """
 
     if request.method == "POST":
         add_ticket_form = AddForm(request.POST, request.FILES)

@@ -10,4 +10,7 @@ class Product(models.Model):
     description = models.TextField()
 
     def __str__(self):
+        """
+        Returns product name
+        """
         return self.name

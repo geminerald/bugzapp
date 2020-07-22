@@ -37,6 +37,9 @@ class Ticket(models.Model):
     score = models.IntegerField(default=0)
 
     def __str__(self):
+        """
+        Displays ticket title, type, status and project
+        """
         return "{0}  Type: {1} Status: {2} on {3}".format(self.title,
                                                           self.type,
                                                           self.status,

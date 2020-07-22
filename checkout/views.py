@@ -11,6 +11,10 @@ import stripe
 
 @verified_email_required
 def checkout(request):
+    """
+    If GET returns checkout page with form, otherwise sends order to be
+    processed with data from form
+    """
     stripe_public_key = settings.STRIPE_PUBLIC_KEY
     stripe_secret_key = settings.STRIPE_SECRET_KEY
 
@@ -59,7 +63,6 @@ def checkout(request):
 
         current_cart = cart_contents(request)
         total = current_cart['total']
-        print(total)
         stripe_total = round(total * 100)
         stripe.api_key = stripe_secret_key
         intent = stripe.PaymentIntent.create(
