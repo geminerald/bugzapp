@@ -310,14 +310,44 @@ Manual testing was undertaken throughout development to ensure that all features
 
 ****
 
-**System to Test:** 
+**System to Test:** Order Cycle
 
-**Actions Taken:** 
+**Actions Taken:** Go to checkout, select product, proceed to checkout with fake details. 
 
-**Result:** 
+**Result:** Order placed when correct info entered and appropriate messaging appeared for invalid info.
 
-**Conclusion**
+**Conclusion** Orders placing as required and good user feedback provided. 
 
+****
+
+**System to Test:** Create Tickets
+
+**Actions Taken:** Navigate to Add Ticket page (via main navbar available on all pages). Required fields entered.
+
+**Result:** Tickets adding to db and showing correctly in tickets page.
+
+**Conclusion** System functional.
+
+****
+**System to Test:** View Tickets
+
+**Actions Taken:** Navigate to view tickets page. Tickets showing correctly in this page with clear layout of all available information and can view more details on individual tickets. 
+
+**Result:** Viewing tickets works as expected.
+
+**Conclusion** System working as designed. 
+
+****
+
+**System to Test:** Search Tickets
+
+**Actions Taken:** Searched for tickets using title and keyword. System handles appropriately including messaging if no applicable tickets. 
+
+**Result:** Information was displayed correctly and good feedback provided to users. 
+
+**Conclusion** Tickets can be searched as expected.
+
+****
 
 <br>
 
