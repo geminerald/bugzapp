@@ -1,3 +1,6 @@
+/**
+ * Turns navbar from transparent to coloured on scroll
+ */
 $(function () {
   $(document).scroll(function () {
     const $nav = $(".navbar-fixed-top");
@@ -5,6 +8,10 @@ $(function () {
   });
 });
 
+
+/**
+ * Toggles navbar slide for smaller screens on hamburger menu
+ */
 const navSlide = () => {
     const burger = document.querySelector('.burger');
     const nav = document.querySelector('.nav-links');
