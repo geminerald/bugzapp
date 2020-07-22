@@ -16,8 +16,16 @@ select {
   border-radius: 6px;
 }
 
+.searchbar{
+    width: 80%;
+}
+
+.search-button{
+    width: 20%;
+}
+
 .search-and-filter form {
-  width: 15%;
+  width: 80%;
 }
 
 .ticket {
@@ -41,4 +49,5 @@ select {
 button {
   margin: 0;
   box-shadow: none;
+  width: 15%;
 }

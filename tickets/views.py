@@ -14,6 +14,7 @@ from notes.forms import AddNoteForm
 def tickets(request):
     """
     Renders a page showing all currently open tickets
+    Allows for searching for specific terms passed in as q in request.GET
     """
     tickets = Ticket.objects.all()
     query = None
@@ -22,7 +23,7 @@ def tickets(request):
         if 'q' in request.GET:
             query = request.GET['q']
             if not query:
-                messages.success(request, "Ticket Not Found")
+                messages.success(request, "Please enter a search term")
                 return redirect(reverse('tickets'))
             queries = Q(title__icontains=query) | Q(
                 description__icontains=query)

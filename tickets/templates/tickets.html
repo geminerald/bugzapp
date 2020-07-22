@@ -14,24 +14,13 @@
 <hr />
 <div class="search-and-filter">
 	<form method="GET" action="{% url 'tickets' %}">
-		<div class="input-group search-line"><input class="form-control" type="text" name="q" placeholder="Search Tickets" />
-            <button class="form-control border-black rounded-0" type="submit">
-                <span class="text-success">Search</span>
-            </button>
+		<div class="input-group search-line">
+            <input class="form-control searchbar" type="text" name="q" placeholder="Search Tickets" />
+                <button class="form-control border-black rounded-0 search-button" type="submit">
+                    <span class="text-success">Search</span>
+                </button>
         </div>
-	</form>
-    <form method="GET" action="{% url 'tickets' %}">
-        <select name="status-select" id="status-select">  
-            <option value="empty" selected >Status</option>
-            <option value="opened" >Open</option>
-            <option value="closed">Closed</option>
-        </select>
     </form>
-    <select name="type-select" id="type-select">    
-        <option value="empty" selected >Type</option>
-        <option value="bug" >Bug Report</option>
-        <option value="feature">Feature Request</option>
-    </select>
 </div>
 <hr />
 
