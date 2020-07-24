@@ -1,0 +1,148 @@
+fieldset {
+  margin: 2rem;
+  border: 1px solid var(--success-colour);
+  border-radius: 6px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.product-row {
+  width: 100%;
+}
+.product-row fieldset {
+  width: 80%;
+}
+
+.product-class {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.buttons {
+  position: static;
+}
+
+.checkout-success h2,
+p,
+h3 {
+  text-align: center;
+  margin: 2rem;
+}
+
+.success-container {
+  margin-top: 0;
+}
+
+.checkout-success p a {
+  text-decoration: none;
+  color: var(--success-colour);
+}
+
+.logo-font {
+  text-align: center;
+}
+
+.button {
+  padding: 1rem;
+  border-radius: 6px;
+  margin: 2rem 2rem 2rem 2rem auto;
+  font-weight: bolder;
+  box-shadow: 0 4px 8px 0 rgba(55, 0, 179, 0.8);
+  text-decoration: none;
+  color: var(--primary-colour);
+  background-color: var(--off-white-colour);
+}
+
+.info-row {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  min-height: 35vh;
+}
+
+.info-row fieldset {
+  padding: 3rem;
+  height: 100%;
+  width: 30rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.form-column {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.form-column div {
+  width: 100%;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 4rem auto;
+  width: 30%;
+}
+
+#loading-overlay{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    background-color: var(--white-colour);
+    color: var(--black-colour); 
+}
+
+#spinner-icon{
+    color: var(--black-colour);
+}
+
+.loading-spinner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    height: 50%;
+    background-color: var(--white-colour);
+    color: var(--black-colour); 
+}
+
+.icon{
+    color: var(--required-colour);
+}
+
+.centre-col{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.back-button{
+    border: 2px solid var(--primary-colour);
+    border-radius: 6px;
+    color: var(--white-colour);
+    text-decoration: none;
+    padding: 2rem;
+    margin: 2rem;
+}
+
+@media screen and (max-width: 1068px) {
+  .buttons {
+    width: 100%;
+  }
+}

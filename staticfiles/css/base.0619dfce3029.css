@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&display=swap");
+
+/* Root Colours */
+
+:root {
+  --primary-colour: #3700b3;
+  --secondary-colour: #03dac6;
+  --tertiary-colour: #bb86fc;
+  --white-colour: #fdfffc;
+  --off-white-colour: #efe9e7;
+  --background-grey: #1e1e1e;
+  --black-colour: #121212;
+  --required-colour: #980707;
+  --error-colour: #cf6679;
+  --success-colour: #a1e44d;
+}
+
+/* Universals */
+
+html {
+  font-size: 62.5%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--white-colour);
+  font-family: "Archivo", sans-serif;
+  font-size: 1.7rem;
+  background: url("/static/images/home-bg-image.52e2434b2795.jpg") no-repeat center center
+    fixed;
+  background-size: cover;
+  height: calc(100vh - 164px);
+}
+
+/* Footer */
+
+footer {
+  margin-top: 5rem;
+  min-height: 8rem;
+  background-color: var(--background-grey);
+  color: var(--off-white-colour);
+  font-size: 2rem;
+  width: 100%;
+}
+
+.sizer{
+    width: 100%;
+}
+
+footer .container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 2rem;
+  flex-flow: row wrap;
+}
+
+.mobile-container p{
+    margin-top: 2rem;
+    text-align: center;
+}
+
+footer .container a{
+    text-decoration: none;
+    color: var(--off-white-colour);
+}
+
+.container p{
+    margin-bottom: 0;
+}
+
+/* Main container across all pages */
+
+.main-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  min-height: 60vh;
+  margin-top: 10vh;
+  z-index: -1;
+}
+
+.overlay {
+  background-color: var(--background-grey);
+  min-height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: -2;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: var(--white-colour);
+  margin-top: 3rem;
+}
+
+/* Borders */
+
+.primary-border {
+  border: 3px outset var(--primary-colour);
+  padding: 1rem 6rem 6rem 6rem;
+  border-radius: 6px;
+  background-color: var(--background-grey);
+  z-index: 1;
+}
+
+.secondary-border {
+  border: 2px solid var(--secondary-colour);
+  padding: 1rem 6rem 6rem 6rem;
+  border-radius: 6px;
+}
+.tertiary-border {
+  border: 2px solid var(--tertiary-colour);
+  padding: 1rem 6rem 6rem 6rem;
+  border-radius: 6px;
+}
+
+button {
+  padding: 1rem;
+  border-radius: 6px;
+  margin: 2rem auto;
+  font-weight: bolder;
+  box-shadow: 0 4px 8px 0 rgba(55, 0, 179, 0.8);
+}
+
+.alert {
+  margin-top: 5rem;
+}

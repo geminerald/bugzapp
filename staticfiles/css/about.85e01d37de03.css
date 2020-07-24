@@ -1,0 +1,33 @@
+img {
+  height: 80%;
+  width: 80%;
+  margin: 1rem auto;
+  border: 2px solid var(--white-colour);
+  box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.9);
+}
+
+.header-row {
+  margin-bottom: 5rem;
+}
+
+.col {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  margin: 5rem auto;
+  padding: 5rem;
+}
+
+.row{
+    width: 100%;
+}
+
+h2{
+    margin: 1rem;
+}
+
+.about-p-link{
+    color: var(--success-colour);
+    text-decoration: none;
+    cursor: pointer;
+}

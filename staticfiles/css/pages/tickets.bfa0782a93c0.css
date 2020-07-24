@@ -1,0 +1,76 @@
+.search-and-filter {
+  border: 2px solid var(--primary-colour);
+  border-radius: 6px;
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: row wrap;
+  color: var(--black-colour);
+  z-index: 2;
+  font-size: 1.6rem;
+}
+
+select {
+  max-height: 4rem;
+  border-radius: 6px;
+}
+
+#searchbar {
+  width: 80%;
+  height: 2.5rem;
+}
+
+.search-button {
+  width: 20%;
+}
+
+.search-and-filter form {
+  width: 80%;
+}
+
+.ticket {
+  border: 2px solid var(--tertiary-colour);
+  border-radius: 6px;
+  width: 100%;
+  padding: 2rem;
+  margin: 2rem;
+  z-index: 2;
+}
+
+.search-line {
+  margin-top: 1rem;
+  padding: 0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+button {
+  margin: 0;
+  box-shadow: none;
+  width: 15%;
+}
+
+.button {
+  background-color: var(--white-colour);
+  color: var(--black-colour);
+  text-decoration: none;
+  padding: 1rem;
+  border-radius: 6px;
+  transition: 0.5s ease-in-out;
+  border: 1px solid var(--white-colour);
+}
+
+.button:hover {
+  background-color: var(--black-colour);
+  color: var(--white-colour);
+  text-decoration: none;
+}
+
+.button-col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

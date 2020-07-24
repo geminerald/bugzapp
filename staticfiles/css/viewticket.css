@@ -1,0 +1,66 @@
+.row {
+  width: 80%;
+  padding: 2rem;
+  text-align: center;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-evenly;
+  height: 2rem;;
+}
+
+button {
+  color: var(--black-colour);
+  padding: 1.6rem;
+  background-color: var(--off-white-colour);
+  border-radius: 6px;
+  font-weight: bolder;
+}
+
+hr {
+  height: 1px;
+  background-color: var(--white-colour);
+  border: none;
+  width: 80%;
+}
+
+form {
+  min-height: 100%;
+}
+
+form input {
+  border-radius: 6px;
+}
+
+.notes-button {
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+.bug-container {
+min-width: 90%;
+  min-height: 80vh;
+  border: 2px solid var(--primary-colour);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  box-shadow: 0 1.6rem 3.2rem 0 rgba(55, 0, 179, 1);
+}
+
+.textarea{
+    min-height: 6rem;
+    margin: 1rem auto;
+}
+
+.title-row, .summary-row{
+    min-height: 2rem;
+    margin-top: 1rem;
+}
+
+.note-text{
+    padding-top: 2rem;
+    text-align: left;
+}
