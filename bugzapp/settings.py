@@ -27,10 +27,10 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = 'DEVELOPMENT' in os.environ
 
 
-ALLOWED_HOSTS = ['bugzapp.herokuapp.com', 'localhost', "*"]
+ALLOWED_HOSTS = ['bugzapp.herokuapp.com', 'localhost']
 
 
 # Application definition
