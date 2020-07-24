@@ -1,10 +1,15 @@
-h1, h2, h3, h4, p{
-    color: var(--white-colour);
-    background-color: var(--black-colour);
-    text-align: center;
+h1,
+h2,
+h3,
+h4,
+p {
+  color: var(--white-colour);
+  background-color: var(--black-colour);
+  text-align: center;
 }
 
-a{
-    text-decoration: none;
-    color: var(--success-colour);
+.link-to-addticket {
+  text-decoration: none;
+  color: var(--success-colour);
+  cursor: pointer;
 }
