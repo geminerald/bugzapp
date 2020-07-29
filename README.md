@@ -414,7 +414,7 @@ It is also important to do this on an ongoing basis and not trying to refactor c
 
 **Issue:** Navbar was not fixed to top on scroll. 
 
-**Actions Taken:** Added position fixed to nav andd top 0
+**Actions Taken:** Added position fixed to nav and top 0
 
 **Status:** Resolved
 
@@ -430,7 +430,7 @@ It is also important to do this on an ongoing basis and not trying to refactor c
 
 **Actions Taken:** Tried removing full name and adding again and running migrations.
 
-**Status:** Removed all migs and added again
+**Status:** Removed all migrations and added again
 
 ****
 **Issue:** Products quantity bug
@@ -451,11 +451,17 @@ It is also important to do this on an ongoing basis and not trying to refactor c
 ****
 **Issue:** Notes will not save to a ticket due to validation errors. . 
 
-**Actions Taken:** Views fields are being edited and form fields are being adjusted to try to get system working.
+**Actions Taken:** Views fields are being edited and form fields are being adjusted to try to get system working. Updated ticket object to resolve.
 
-**Status:** As yet unresolved
+**Status:** Resolved
 ****
+**Issue:** Selecting a negative quantity on checkout caused site to crash. 
 
+**Actions Taken:** Changed quantity to a select element
+
+**Status:** Resolved
+
+****
 
 ## Deployment
 
