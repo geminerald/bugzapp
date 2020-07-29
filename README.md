@@ -51,6 +51,10 @@ Free version only allows creation of tickets for sites or games which I own (for
 
 - [Bugs](#bugs)
 
+- [Deployment](#deployment)
+    - [Running Locally](#running-this-project-locally)
+    - [Deploying to Heroku](#deploying-bugzapp-to-heroku)
+
 - [Credits](#credits)
 
 
@@ -451,6 +455,96 @@ It is also important to do this on an ongoing basis and not trying to refactor c
 
 **Status:** As yet unresolved
 ****
+
+
+## Deployment
+
+
+### Running this project locally
+
+To run BugZapp please follow the steps below!
+
+Before starting make sure you have the following:
+
+* An IDE (interactive development environment) such as [Visual Studio Code](https://code.visualstudio.com/) or [GitPod](https://www.gitpod.io/) (both are free)
+* You <strong>MUST</strong> have the following installed on your machine if using Visual Studio:
+* * <a href="https://pip.pypa.io/en/stable/installing/">PIP</a>
+* * <a href="https://www.python.org/">Python3</a>
+* * <a href="https://git-scm.com/">Git</a>
+* You will also <strong>need to</strong> create an account with [Stripe](https://stripe.com/) in order to run this project.
+
+
+#### Instructions
+
+WARNING: You may need to follow a different guide based on the OS you are using, more info is avaiable [here](https://python.readthedocs.io/en/latest/library/venv.html)
+
+
+* 1: <strong>Clone</strong> The BugZapp repository from [here](https://github.com/geminerald/bugzapp) or by entering the following into the command line:
+```bash
+git clone https://github.com/geminerald/bugzapp
+```
+* 2: <strong>Navigate</strong> to this folder in your terminal.
+* 3: <strong>Enter</strong> the following command into your terminal.
+```bash
+python3 -m .venv venv
+```
+* 4: <strong>Initialize</strong> the environment by using the following command.
+```bash
+.venv\bin\activate
+```
+
+* 5: <strong>Install</strong> the requirements and dependancies from the requirements.txt file
+```bash
+pip3 -r requirements.txt
+```
+
+* 6: Within your IDE now <strong>create</strong> a file where you can store your secret information for the app, either using an env.py file or Visual Studio's settings.json.
+
+* 7: <strong>Enter</strong> the following command into the terminal to migrate models into database.
+```bash
+python3 manage.py migrate
+```
+
+* 8: Then you need to <strong>Create</strong> a 'superuser' for the project using the terminal, enter the following command.
+```bash
+python3 manage.py createsuperuser
+```
+
+* 9: The app can now be ran locally using the following command.
+```bash
+python3 manage.py runserver
+```
+
+Congratulations, BugZapp is now running locally.
+
+### Deploying BugzApp to Heroku
+
+* 1: <strong>Create</strong> a requirements.txt file using the following command.
+```bash
+pip3 freeze > requirements.txt
+```
+
+* 2: <strong>Create</strong> a procfile with the following command.
+```bash
+echo web: python3 app.py > Procfile
+```
+* 3: Push these newly created files to your repository.
+* 4: Create a new app for this project on the Heroku Dashboard.
+* 5: Select your deployment method by clicking on the deployment method button and select GitHub.
+* 6: On the dashboard, set the following config variables:
+
+**Key**|**Value**
+:-----:|:-----:
+DATABASE\_URL|<your\_database\_url>
+SECRET\_KEY|<your\_secret\_key>
+SENDGRID\_API\_KEY|<your\_sendgrid\_api\_key>
+STRIPE\_PUBLISHABLE|<your\_stripe\_publishable\_key>
+STRIPE\_SECRET|<your\_stripe\_secret\_key>
+
+* 7: <strong>Click</strong> the deploy button on the heroku Dashboard.
+* 8: Wait for the build to finish and click the view project link once it has!
+
+Congratulations, BugzApp is now hosted on Heroku and is live!
 
 ## Credits
 
