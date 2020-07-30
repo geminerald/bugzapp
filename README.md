@@ -10,6 +10,8 @@ Alternatively users can buy the system for use on their own projects. The third 
 
 Free version only allows creation of tickets for sites or games which I own (for testing, user feedback etc.) Were this project to be developed commercially it would create an organisation model which would only load bugs associated with a specific organisation or user. 
 
+Click [here](https://bugzapp.herokuapp.com/) to view the deployed project.
+
 ## Contents:
 
 - [UX](#user-experience)
@@ -82,14 +84,14 @@ the issues as required.
 
 | As a | I want to | So that I can |
 | --- | --- | --- | --- |
-| User |Create Bug Reports |  let the relevant people know of issues |
-| User |Have a fully responsive service |  access tickets across all devices |
+| User | Create Bug Reports |  let the relevant people know of issues |
+| User | Have a fully responsive service |  access tickets across all devices |
 | User | Be able to try the service before I buy it |  be confident in  my purchase |
 | User | Create an account and have the website repond accordingly |  access secure areas of the website |
 | User | Purchase the software securely  | use the system myself without risking my personal data |
 |  |  |  |  |
 | Site Owner | Receive bug reports and feature requests | improve my work |
-| Site Owner | Generate revenue by selling this software| afford to work more on my own projects |
+| Site Owner | Generate revenue by selling this software | afford to work more on my own projects |
 | Site Owner | Learn Django | create websites quickly and effectively |
 
 
