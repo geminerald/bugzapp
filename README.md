@@ -351,6 +351,27 @@ Manual testing was undertaken throughout development to ensure that all features
 
 ****
 
+**System to Test:** Checkout
+
+**Actions Taken:** Entered credit card info from the Stripe website both correctly and incorrectly to ensure that validation was working as it should.
+
+**Result:** Card info was accepted and validated correctly. Correct Error info shown.
+
+**Conclusion** Checkout system is functional.
+
+****
+
+
+**System to Test:** Negative Order Value
+
+**Actions Taken:** Selected to purchase a negative quantity of a product. This threw an error so changed quantity to a select to stop this.
+
+**Result:** Users can no longer select a negative value for quantity. 
+
+**Conclusion** The bug is fixed.
+
+****
+
 <br>
 
 
