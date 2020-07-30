@@ -134,16 +134,16 @@ Below is a table showing a sample of the colours chosen for this theme, the name
 
 | Placeholder | Name | Hex | Description |
 | --- | --- | --- | --- |
-| ![#3700b3](https://placehold.it/15/3700b3/000000?text=+) | **"Trypan Blue"** | #3700B3 | Colour Info Here |
-| ![#03dac6](https://placehold.it/15/03dac6/000000?text=+) | **"Turquoise"**  | #03DAC6 | Colour Info Here | 
-| ![#bb86fc](https://placehold.it/15/bb86fc/000000?text=+) | **"Lavendar Floral"** | #BB86FC | Colour Info Here |
-| ![#fdfffc](https://placehold.it/15/fdfffc/000000?text=+) | **"Baby Powder"** | #FDFFFC  | White |
-| ![#efe9e7](https://placehold.it/15/efe9e7/000000?text=+) | **"Isabelline"** | #EFE9E7 | Off White |
-| ![#121212](https://placehold.it/15/121212/000000?text=+) | **"Rich Black Fogra"** | #121212 | Black |
-| ![#1e1e1e](https://placehold.it/15/1e1e1e/000000?text=+) | **"Eerie Black"** | #1E1E1E | Background Grey |
-| ![#cf6679](https://placehold.it/15/cf6679/000000?text=+) | **"Cinnamon Satin"**  | #cf6679 | Error Red |
-| ![#980707](https://placehold.it/15/980707/000000?text=+) | **"Dark Red"** |  #980707 | Required Red |
-| ![#a1e44d](https://placehold.it/15/a1e44d/000000?text=+) | **"Inchworm"** | #a1e44d | Success Green |
+| ![#3700b3](https://placehold.it/15/3700b3/000000?text=+) | **"Trypan Blue"** | #3700B3 | Selected as a colour that would stand out while keeping in the dark theme. |
+| ![#03dac6](https://placehold.it/15/03dac6/000000?text=+) | **"Turquoise"**  | #03DAC6 | Selected as a similar colour but to stand out more for accent. |
+| ![#bb86fc](https://placehold.it/15/bb86fc/000000?text=+) | **"Lavendar Floral"** | #BB86FC | A tertiary colour which would give contrast while not drawing attention |
+| ![#fdfffc](https://placehold.it/15/fdfffc/000000?text=+) | **"Baby Powder"** | #FDFFFC  | The main white colour, used as a bright white |
+| ![#efe9e7](https://placehold.it/15/efe9e7/000000?text=+) | **"Isabelline"** | #EFE9E7 | The softer off-white colour |
+| ![#121212](https://placehold.it/15/121212/000000?text=+) | **"Rich Black Fogra"** | #121212 | Used where a harsh black colour was required for contrast. |
+| ![#1e1e1e](https://placehold.it/15/1e1e1e/000000?text=+) | **"Eerie Black"** | #1E1E1E | Used as a standard background colour throughout the site |
+| ![#cf6679](https://placehold.it/15/cf6679/000000?text=+) | **"Cinnamon Satin"**  | #cf6679 | Used as a ref flag, designed to stand out more than required red |
+| ![#980707](https://placehold.it/15/980707/000000?text=+) | **"Dark Red"** |  #980707 | Used as a softer colour to highlight issues |
+| ![#a1e44d](https://placehold.it/15/a1e44d/000000?text=+) | **"Inchworm"** | #a1e44d | Used for a success colour and also for hyperlinks |
 
 
 #### Colour Code
