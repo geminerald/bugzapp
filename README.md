@@ -89,7 +89,6 @@ the issues as required.
 | User | Be able to try the service before I buy it |  be confident in  my purchase |
 | User | Create an account and have the website repond accordingly |  access secure areas of the website |
 | User | Purchase the software securely  | use the system myself without risking my personal data |
-|  |  |  |  |
 | Site Owner | Receive bug reports and feature requests | improve my work |
 | Site Owner | Generate revenue by selling this software | afford to work more on my own projects |
 | Site Owner | Learn Django | create websites quickly and effectively |
@@ -176,9 +175,6 @@ The **Archivo** font was chosen for this project as it was **clear** and **conci
 ### Icons
 
 The icons for this project came from [Font Awesome](https://fontawesome.com/6?next=%2F) as they are universally highly regarded as having a great selection of icons for development.
-
-
-### Root Styles
 
 ### Images
 
@@ -403,7 +399,7 @@ It is also important to do this on an ongoing basis and not trying to refactor c
 | User |Create Bug Reports |  let the relevant people know of issues | Clicking Add Ticket to create a new bug report | Test Passes |
 | User |Have a fully responsive service |  access tickets across all devices | Using Dev tools to ensure functionality accross tablet and mobile devices | Test Passes |
 | User | Be able to try the service before I buy it |  be confident in  my purchase | Users can set up accounts and access base functionality | Test Passes |
-| User | Create an account and have the website repond accordingly |  access secure areas of the website | Trying to access checkout or ticket system while not logged in redirects to login page | Test passes |
+| User | Create an account  |  access secure areas of the website | Trying to access checkout or ticket system while not logged in redirects to login page | Test passes |
 | User | Purchase the software securely  | use the system myself without risking my personal data | Checkouts can be completed securely using Stripe which also handles security | Test Passes |
 |  |  |  |  |
 | Site Owner | Receive bug reports and feature requests | improve my work | Tickets can be created and are shown in the Tickets page | Test Passes |
